@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "fr",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Ajouter une sous-tâche-fichier",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Rechercher toutes les tâches...",
       "taskFinderSearchAria": "Rechercher des tâches",
       "taskFinderSearchOpenPlaceholder": "Rechercher des tâches ouvertes...",
-      "taskFinderSearchScopedPlaceholder": "Rechercher dans les portées de tâches sélectionnées..."
+      "taskFinderSearchScopedPlaceholder": "Rechercher dans les portées de tâches sélectionnées...",
+      "taskIdRepairConfirm": "Régénérer l’ID",
+      "taskIdRepairMessage": "Les ID de tâches doivent contenir exactement 7 lettres minuscules ou chiffres. Régénérez cet ID pour activer les actions sur la tâche.",
+      "taskIdRepairTitle": "ID de tâche incompatible"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "Le fichier actif n'est pas une tâche-fichier Operon.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "Le titre de la tâche en ligne doit commencer par 1 à 6 caractères #, comme {{example}}.",
       "inlineTaskMoved": "Tâche en ligne déplacée : {{taskName}}",
       "inlineTaskMovedHere": "Tâche en ligne déplacée ici",
+      "inlineTaskParentDrawingRequired": "Ouvrez le dessin parent et lancez le créateur de tâches depuis celui-ci pour créer en toute sécurité sa tâche en ligne.",
+      "inlineTaskParentMissing": "La tâche parente sélectionnée est manquante ou ambiguë. Aucune tâche n’a été créée.",
       "inlineTaskTargetInvalid": "Le fichier de tâche en ligne configuré est introuvable.",
       "inlineTaskTargetMissing": "Choisissez un fichier de tâche en ligne par défaut dans les paramètres ou activez l'enregistrement dans la note quotidienne.",
       "inlineTasksCreatedCount": "{{count}} tâches en ligne créées",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "La tâche n'a pas été supprimée et certaines modifications associées doivent être vérifiées.",
       "taskDescriptionRequired": "La description de la tâche est requise.",
       "taskFieldsInvalid": "Operon n'a pas pu enregistrer cette tâche. Vérifiez ses champs et réessayez.",
+      "taskIdRepairUncertain": "La réparation précédente de l’ID n’a pas pu être vérifiée. Vérifiez les fichiers affectés avant de réessayer.",
       "taskNotInIndex": "Tâche introuvable dans l'index",
       "taskSaveFailed": "Échec de l'enregistrement des modifications de la tâche",
       "taskSourceUnavailable": "La source de la tâche est introuvable. Operon a actualisé l'index des tâches.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Basculer l'aperçu des descendants"
     }
   },
-  "sourceVersion": "b78946e0f24d2e0e5acf420ad4668eed2c93ad9cb9c56da93ae65941521f5836"
+  "sourceVersion": "a1077623824ca343d8b55ca9224db873c4c259f8fa2cea5e5e3f81030af689a6"
 }

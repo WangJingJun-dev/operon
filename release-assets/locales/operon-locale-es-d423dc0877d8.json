@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "es",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Añadir subtarea de archivo",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Buscar todas las tareas...",
       "taskFinderSearchAria": "Buscar tareas",
       "taskFinderSearchOpenPlaceholder": "Buscar tareas abiertas...",
-      "taskFinderSearchScopedPlaceholder": "Buscar en los ámbitos de tareas seleccionados..."
+      "taskFinderSearchScopedPlaceholder": "Buscar en los ámbitos de tareas seleccionados...",
+      "taskIdRepairConfirm": "Regenerar ID",
+      "taskIdRepairMessage": "Los ID de tareas deben contener exactamente 7 letras minúsculas o números. Regenera este ID para habilitar las acciones de la tarea.",
+      "taskIdRepairTitle": "ID de tarea incompatible"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "El archivo activo no es una tarea de archivo de Operon.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "El encabezado de la tarea en línea debe empezar con 1 a 6 caracteres #, como {{example}}.",
       "inlineTaskMoved": "Tarea en línea movida: {{taskName}}",
       "inlineTaskMovedHere": "Tarea en línea movida aquí",
+      "inlineTaskParentDrawingRequired": "Abre el dibujo principal e inicia el creador de tareas allí para crear de forma segura su tarea en línea.",
+      "inlineTaskParentMissing": "Falta la tarea principal seleccionada o es ambigua. No se creó ninguna tarea.",
       "inlineTaskTargetInvalid": "No se pudo encontrar el archivo de tareas en línea configurado.",
       "inlineTaskTargetMissing": "Elegir un archivo de tareas en línea predeterminado en la configuración o activar el guardado en la nota diaria.",
       "inlineTasksCreatedCount": "{{count}} tareas en línea creadas",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "La tarea no se eliminó y algunos cambios relacionados requieren revisión.",
       "taskDescriptionRequired": "La descripción de la tarea es obligatoria.",
       "taskFieldsInvalid": "Operon no pudo guardar esta tarea. Revisa sus campos e inténtalo de nuevo.",
+      "taskIdRepairUncertain": "No se pudo verificar la reparación anterior del ID. Revisa los archivos afectados antes de reintentarlo.",
       "taskNotInIndex": "Tarea no encontrada en el índice",
       "taskSaveFailed": "No se pudieron guardar los cambios de la tarea",
       "taskSourceUnavailable": "No se encontró el origen de la tarea. Operon actualizó el índice de tareas.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Alternar vista previa de descendientes"
     }
   },
-  "sourceVersion": "58d9dda46ec7cdfe78bfc99281bf87dcb6a3d6b82ed0509e80888bbf2ef31109"
+  "sourceVersion": "204d154e42ef97fc1847b0bb7882476237c3138690d4a29e84146f73d5e71a22"
 }

@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "{{shown}} / {{total}} tareas que ocurren hoy",
 		"taskFinderRecentModifiedCountOne": "{{count}} tarea modificada en {{period}}",
 		"taskFinderRecentModifiedCountMany": "{{count}} tareas modificadas en {{period}}",
-		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} tareas modificadas en {{period}}"
+		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} tareas modificadas en {{period}}",
+		"taskIdRepairTitle": "ID de tarea incompatible",
+		"taskIdRepairMessage": "Los ID de tareas deben contener exactamente 7 letras minúsculas o números. Regenera este ID para habilitar las acciones de la tarea.",
+		"taskIdRepairConfirm": "Regenerar ID"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "La API de control del grupo de tareas de Excalidraw no está disponible.",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "No se pudo aplicar el cambio del grupo. La tarjeta volvió a su posición anterior.",
 		"canvasGroupOverlap": "Los grupos Operon con la misma propiedad de valor único no pueden superponerse. No se aplicó el cambio.",
 		"canvasGroupDropPartial": "No se pudo completar un cambio del grupo de forma segura. Revisa la tarea y el Canvas antes de continuar.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Tarea creada, pero no se pudieron guardar las preferencias de plantilla."
+		"taskCreatedTemplatePreferencesSaveFailed": "Tarea creada, pero no se pudieron guardar las preferencias de plantilla.",
+		"taskIdRepairUncertain": "No se pudo verificar la reparación anterior del ID. Revisa los archivos afectados antes de reintentarlo.",
+		"inlineTaskParentMissing": "Falta la tarea principal seleccionada o es ambigua. No se creó ninguna tarea.",
+		"inlineTaskParentDrawingRequired": "Abre el dibujo principal e inicia el creador de tareas allí para crear de forma segura su tarea en línea."
 	},
 	"duplicateOperonId": {
 		"title": "Conflicto de Operon ID",

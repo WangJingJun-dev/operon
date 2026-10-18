@@ -1,5 +1,6 @@
 import type { App } from 'obsidian';
 import { isValidOperonId } from '../core/id-generator';
+import { t } from '../core/i18n';
 import type { TaskIdRepairTarget } from '../core/task-id-repair-sources';
 import { ConfirmActionModal } from './confirm-action-modal';
 
@@ -13,10 +14,10 @@ export async function requestTaskIdRepair<T>(
     const snapshot = { ...target };
     const confirmed = await new Promise<boolean>(resolve => {
         new ConfirmActionModal(app, {
-            title: 'Incompatible task ID',
-            message: 'Task IDs must contain exactly 7 lowercase letters or numbers. Regenerate this ID to enable task actions.',
-            confirmText: 'Regenerate ID',
-            cancelText: 'Cancel',
+            title: t('modals', 'taskIdRepairTitle'),
+            message: t('modals', 'taskIdRepairMessage'),
+            confirmText: t('modals', 'taskIdRepairConfirm'),
+            cancelText: t('buttons', 'cancel'),
             initialFocus: 'cancel',
         }, resolve).open();
     });

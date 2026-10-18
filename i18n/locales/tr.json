@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "{{shown}} / {{total}} bugün olan görev",
 		"taskFinderRecentModifiedCountOne": "{{count}} görev {{period}} güncellendi",
 		"taskFinderRecentModifiedCountMany": "{{count}} görev {{period}} güncellendi",
-		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} görev {{period}} güncellendi"
+		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} görev {{period}} güncellendi",
+		"taskIdRepairTitle": "Uyumsuz görev kimliği",
+		"taskIdRepairMessage": "Görev kimlikleri tam olarak 7 küçük harf veya rakam içermelidir. Görev eylemlerini etkinleştirmek için bu kimliği yeniden oluşturun.",
+		"taskIdRepairConfirm": "Kimliği yeniden oluştur"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "Excalidraw Görev Havuzu kontrol API’si kullanılamıyor.",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "Grup değişikliği uygulanamadı. Kart önceki konumuna döndü.",
 		"canvasGroupOverlap": "Aynı tek değerli property’ye ait Operon grupları kesişemez. Değişiklik uygulanmadı.",
 		"canvasGroupDropPartial": "Grup değişikliği güvenle tamamlanamadı. Devam etmeden task ve Canvas’ı kontrol edin.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Görev oluşturuldu, ancak şablon tercihleri kaydedilemedi."
+		"taskCreatedTemplatePreferencesSaveFailed": "Görev oluşturuldu, ancak şablon tercihleri kaydedilemedi.",
+		"taskIdRepairUncertain": "Önceki kimlik onarımı doğrulanamadı. Yeniden denemeden önce etkilenen dosyaları inceleyin.",
+		"inlineTaskParentMissing": "Seçilen üst görev eksik veya belirsiz. Hiçbir görev oluşturulmadı.",
+		"inlineTaskParentDrawingRequired": "Üst çizimi açın ve satır içi görevini güvenli oluşturmak için görev oluşturucuyu orada başlatın."
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID Çakışması",

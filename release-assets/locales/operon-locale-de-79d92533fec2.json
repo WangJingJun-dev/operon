@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "de",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Datei-Unteraufgabe hinzufügen",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Alle Aufgaben suchen…",
       "taskFinderSearchAria": "Aufgaben suchen",
       "taskFinderSearchOpenPlaceholder": "Offene Aufgaben suchen…",
-      "taskFinderSearchScopedPlaceholder": "In ausgewählten Suchbereichen suchen…"
+      "taskFinderSearchScopedPlaceholder": "In ausgewählten Suchbereichen suchen…",
+      "taskIdRepairConfirm": "ID neu generieren",
+      "taskIdRepairMessage": "Task-IDs müssen genau 7 Kleinbuchstaben oder Ziffern enthalten. Generiere diese ID neu, um Task-Aktionen zu ermöglichen.",
+      "taskIdRepairTitle": "Inkompatible Task-ID"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "Die aktive Datei ist keine Operon-Datei-Aufgabe.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "Die Inline-Aufgaben-Überschrift muss mit 1 bis 6 #-Zeichen beginnen, wie {{example}}.",
       "inlineTaskMoved": "Inline-Aufgabe verschoben: {{taskName}}",
       "inlineTaskMovedHere": "Inline-Aufgabe hierher verschoben",
+      "inlineTaskParentDrawingRequired": "Öffne die übergeordnete Zeichnung und starte dort den Task-Ersteller, um die zugehörige Inline-Aufgabe sicher zu erstellen.",
+      "inlineTaskParentMissing": "Die ausgewählte übergeordnete Aufgabe fehlt oder ist mehrdeutig. Es wurde keine Aufgabe erstellt.",
       "inlineTaskTargetInvalid": "Die konfigurierte Inline-Aufgabendatei konnte nicht gefunden werden.",
       "inlineTaskTargetMissing": "Wähle in den Einstellungen eine Standarddatei für Inline-Aufgaben oder aktiviere das Speichern in Tagesnotizen.",
       "inlineTasksCreatedCount": "{{count}} Inline-Aufgaben erstellt",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "Die Aufgabe wurde nicht gelöscht und einige zugehörige Aufgabenänderungen müssen geprüft werden.",
       "taskDescriptionRequired": "Eine Aufgabenbeschreibung ist erforderlich.",
       "taskFieldsInvalid": "Operon konnte diese Aufgabe nicht speichern. Prüfe die Aufgabenfelder und versuche es erneut.",
+      "taskIdRepairUncertain": "Die vorherige ID-Reparatur konnte nicht verifiziert werden. Prüfe die betroffenen Dateien, bevor du es erneut versuchst.",
       "taskNotInIndex": "Aufgabe nicht im Index gefunden",
       "taskSaveFailed": "Aufgabenänderungen konnten nicht gespeichert werden",
       "taskSourceUnavailable": "Die Aufgabenquelle wurde nicht gefunden. Operon hat den Aufgabenindex aktualisiert.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Vorschau untergeordneter Aufgaben umschalten"
     }
   },
-  "sourceVersion": "d3c9d9f2660aaced2cd6c66f2c2aef905fa78d56a666bb53700a5b7b60d0b20b"
+  "sourceVersion": "def9d89534571086d202d59ac8bffcb449d9bab3b6c1abc45491ec1a343b86f6"
 }

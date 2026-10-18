@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "tr",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Dosya Tipi Alt Görev Ekle",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Tüm görevleri ara...",
       "taskFinderSearchAria": "Görev ara",
       "taskFinderSearchOpenPlaceholder": "Açık görevleri ara...",
-      "taskFinderSearchScopedPlaceholder": "Seçili görev kapsamlarında ara..."
+      "taskFinderSearchScopedPlaceholder": "Seçili görev kapsamlarında ara...",
+      "taskIdRepairConfirm": "Kimliği yeniden oluştur",
+      "taskIdRepairMessage": "Görev kimlikleri tam olarak 7 küçük harf veya rakam içermelidir. Görev eylemlerini etkinleştirmek için bu kimliği yeniden oluşturun.",
+      "taskIdRepairTitle": "Uyumsuz görev kimliği"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "Aktif dosya bir Operon dosya görevi değil.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "Satır içi görev başlığı 1 ile 6 adet # karakteriyle başlamalıdır, örneğin {{example}}.",
       "inlineTaskMoved": "Satır içi görev taşındı: {{taskName}}",
       "inlineTaskMovedHere": "Satır içi görev buraya taşındı",
+      "inlineTaskParentDrawingRequired": "Üst çizimi açın ve satır içi görevini güvenli oluşturmak için görev oluşturucuyu orada başlatın.",
+      "inlineTaskParentMissing": "Seçilen üst görev eksik veya belirsiz. Hiçbir görev oluşturulmadı.",
       "inlineTaskTargetInvalid": "Yapılandırılan satır içi görev dosyası bulunamadı.",
       "inlineTaskTargetMissing": "Ayarlarda varsayılan bir satır içi görev dosyası seç ya da günlük not kaydını etkinleştir.",
       "inlineTasksCreatedCount": "{{count}} satır içi görev oluşturuldu",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "Görev silinmedi ve ilişkili bazı görev değişikliklerinin incelenmesi gerekiyor.",
       "taskDescriptionRequired": "Görev açıklaması zorunlu.",
       "taskFieldsInvalid": "Operon bu görevi kaydedemedi. Görev alanlarını inceleyip yeniden deneyin.",
+      "taskIdRepairUncertain": "Önceki kimlik onarımı doğrulanamadı. Yeniden denemeden önce etkilenen dosyaları inceleyin.",
       "taskNotInIndex": "Görev indekste bulunamadı",
       "taskSaveFailed": "Görev değişiklikleri kaydedilemedi",
       "taskSourceUnavailable": "Görev kaynağı bulunamadı. Operon görev indeksini yeniledi.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Alt görev önizlemesini aç/kapat"
     }
   },
-  "sourceVersion": "013776b2f57131eada193571e1eb7542f6a5ff73be63c4d56360acba9e161e4f"
+  "sourceVersion": "0c8739895ecd586432a263ba0e0d3ebbd4b11ba464331efae87b0be8207ed3d0"
 }

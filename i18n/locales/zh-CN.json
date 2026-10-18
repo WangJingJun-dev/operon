@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "今天发生 {{shown}} / {{total}} 个任务",
 		"taskFinderRecentModifiedCountOne": "在{{period}}内修改了 {{count}} 个任务",
 		"taskFinderRecentModifiedCountMany": "在{{period}}内修改了 {{count}} 个任务",
-		"taskFinderRecentModifiedCountShown": "在{{period}}内修改了 {{shown}} / {{total}} 个任务"
+		"taskFinderRecentModifiedCountShown": "在{{period}}内修改了 {{shown}} / {{total}} 个任务",
+		"taskIdRepairTitle": "不兼容的任务 ID",
+		"taskIdRepairMessage": "任务 ID 必须恰好由 7 个小写字母或数字组成。请重新生成此 ID 以启用任务操作。",
+		"taskIdRepairConfirm": "重新生成 ID"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "Excalidraw 任务池控件 API 不可用。",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "无法应用分组更改。卡片已返回原来的位置。",
 		"canvasGroupOverlap": "具有相同单值属性的 Operon 分组不能重叠。更改未应用。",
 		"canvasGroupDropPartial": "无法安全完成分组更改。继续之前，请检查任务和白板。",
-		"taskCreatedTemplatePreferencesSaveFailed": "任务已创建，但无法保存模板偏好设置。"
+		"taskCreatedTemplatePreferencesSaveFailed": "任务已创建，但无法保存模板偏好设置。",
+		"taskIdRepairUncertain": "无法验证上一次 ID 修复。重试前请先检查受影响的文件。",
+		"inlineTaskParentMissing": "找不到所选父任务或其存在歧义。未创建任务。",
+		"inlineTaskParentDrawingRequired": "请打开父任务所在的绘图，并在其中启动任务创建器以安全创建其行内任务。"
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID 冲突",

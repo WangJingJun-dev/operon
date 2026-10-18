@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "zh-CN",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "添加文件子任务",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "搜索所有任务……",
       "taskFinderSearchAria": "搜索任务",
       "taskFinderSearchOpenPlaceholder": "搜索未完成任务……",
-      "taskFinderSearchScopedPlaceholder": "搜索所选任务范围……"
+      "taskFinderSearchScopedPlaceholder": "搜索所选任务范围……",
+      "taskIdRepairConfirm": "重新生成 ID",
+      "taskIdRepairMessage": "任务 ID 必须恰好由 7 个小写字母或数字组成。请重新生成此 ID 以启用任务操作。",
+      "taskIdRepairTitle": "不兼容的任务 ID"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "活动文件不是 Operon 文件任务。",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "行内任务标题必须以 1 到 6 个 # 字符开头，例如 {{example}}。",
       "inlineTaskMoved": "已移动行内任务：{{taskName}}",
       "inlineTaskMovedHere": "行内任务已移动到此处",
+      "inlineTaskParentDrawingRequired": "请打开父任务所在的绘图，并在其中启动任务创建器以安全创建其行内任务。",
+      "inlineTaskParentMissing": "找不到所选父任务或其存在歧义。未创建任务。",
       "inlineTaskTargetInvalid": "找不到配置的行内任务文件。",
       "inlineTaskTargetMissing": "请在设置中选择默认行内任务文件，或启用日记保存。",
       "inlineTasksCreatedCount": "已创建 {{count}} 个行内任务",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "任务未被删除，部分相关任务更改需要检查。",
       "taskDescriptionRequired": "任务描述为必填项。",
       "taskFieldsInvalid": "Operon 无法保存此任务。请检查任务字段后重试。",
+      "taskIdRepairUncertain": "无法验证上一次 ID 修复。重试前请先检查受影响的文件。",
       "taskNotInIndex": "索引中未找到该任务",
       "taskSaveFailed": "保存任务更改失败",
       "taskSourceUnavailable": "找不到任务来源。Operon 已刷新任务索引。",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "切换子任务预览"
     }
   },
-  "sourceVersion": "a23ee6ce82d82f88938955e9f8b69daba7a92545acc486950bb493f9d70675cf"
+  "sourceVersion": "04a60d96d319fc9ab0c070fd68ccbf7a9654733e1324496ad61aa7b34e0a628e"
 }

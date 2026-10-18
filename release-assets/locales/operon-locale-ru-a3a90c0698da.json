@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "ru",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Добавить файловую подзадачу",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Поиск всех задач...",
       "taskFinderSearchAria": "Поиск задач",
       "taskFinderSearchOpenPlaceholder": "Поиск открытых задач...",
-      "taskFinderSearchScopedPlaceholder": "Поиск в выбранных областях задач..."
+      "taskFinderSearchScopedPlaceholder": "Поиск в выбранных областях задач...",
+      "taskIdRepairConfirm": "Сгенерировать ID заново",
+      "taskIdRepairMessage": "ID задачи должен содержать ровно 7 строчных букв или цифр. Сгенерируйте этот ID заново, чтобы включить действия с задачей.",
+      "taskIdRepairTitle": "Несовместимый ID задачи"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "Активный файл не является файловой задачей Operon.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "Заголовок встроенной задачи должен начинаться с 1–6 символов #, например {{example}}.",
       "inlineTaskMoved": "Встроенная задача перемещена: {{taskName}}",
       "inlineTaskMovedHere": "Встроенная задача перемещена сюда",
+      "inlineTaskParentDrawingRequired": "Откройте родительский рисунок и запустите в нём создание задачи, чтобы безопасно создать встроенную задачу.",
+      "inlineTaskParentMissing": "Выбранная родительская задача отсутствует или неоднозначна. Задача не создана.",
       "inlineTaskTargetInvalid": "Настроенный файл встроенных задач не найден.",
       "inlineTaskTargetMissing": "Выберите файл встроенных задач по умолчанию в настройках или включите сохранение в ежедневную заметку.",
       "inlineTasksCreatedCount": "Создано встроенных задач: {{count}}",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "Задача не удалена, а некоторые связанные изменения требуют проверки.",
       "taskDescriptionRequired": "Требуется описание задачи.",
       "taskFieldsInvalid": "Operon не удалось сохранить эту задачу. Проверьте поля задачи и повторите попытку.",
+      "taskIdRepairUncertain": "Не удалось проверить предыдущее исправление ID. Перед повторной попыткой проверьте затронутые файлы.",
       "taskNotInIndex": "Задача не найдена в индексе",
       "taskSaveFailed": "Не удалось сохранить изменения задачи",
       "taskSourceUnavailable": "Источник задачи не найден. Operon обновил индекс задач.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Переключить предпросмотр потомков"
     }
   },
-  "sourceVersion": "0d1e4cbc09c0938c0a7527cd403ebe412e5496fa8cabd3006a8a96df7e08def3"
+  "sourceVersion": "c3e189e076fea9238c2aced3018a7da5d4fecc0e2dff9b5f7f670101c99e354f"
 }

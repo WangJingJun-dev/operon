@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "ja",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "ファイルサブタスクを追加",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "すべてのタスクを検索...",
       "taskFinderSearchAria": "タスクを検索",
       "taskFinderSearchOpenPlaceholder": "未完了タスクを検索...",
-      "taskFinderSearchScopedPlaceholder": "選択した範囲のタスクを検索..."
+      "taskFinderSearchScopedPlaceholder": "選択した範囲のタスクを検索...",
+      "taskIdRepairConfirm": "ID を再生成",
+      "taskIdRepairMessage": "タスク ID はちょうど 7 文字の小文字または数字で構成する必要があります。この ID を再生成するとタスク操作が有効になります。",
+      "taskIdRepairTitle": "互換性のないタスク ID"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "アクティブなファイルは Operon ファイルタスクではありません。",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "インラインタスクの見出しは、{{example}} のように 1〜6 個の # で始める必要があります。",
       "inlineTaskMoved": "インラインタスクを移動しました: {{taskName}}",
       "inlineTaskMovedHere": "インラインタスクをここに移動しました",
+      "inlineTaskParentDrawingRequired": "親の図面を開き、そこでタスク作成ツールを起動して、そのインラインタスクを安全に作成してください。",
+      "inlineTaskParentMissing": "選択された親タスクが見つからないか、曖昧です。タスクは作成されませんでした。",
       "inlineTaskTargetInvalid": "設定されたインラインタスクファイルが見つかりませんでした。",
       "inlineTaskTargetMissing": "設定でデフォルトのインラインタスクファイルを選択するか、デイリーノートへの保存を有効にしてください。",
       "inlineTasksCreatedCount": "インラインタスクを {{count}} 件作成しました",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "タスクは削除されておらず、関連する一部のタスク変更を確認する必要があります。",
       "taskDescriptionRequired": "タスクの説明は必須です。",
       "taskFieldsInvalid": "Operon はこのタスクを保存できませんでした。タスクのフィールドを確認して、もう一度お試しください。",
+      "taskIdRepairUncertain": "前回の ID 修復を検証できませんでした。再試行する前に影響を受けたファイルを確認してください。",
       "taskNotInIndex": "インデックスにタスクが見つかりません",
       "taskSaveFailed": "タスクの変更の保存に失敗しました",
       "taskSourceUnavailable": "タスクのソースが見つかりませんでした。Operon はタスクインデックスを更新しました。",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "子孫プレビューを切り替え"
     }
   },
-  "sourceVersion": "a89efaed84802dde71c14664855450892c19e284e388cd1272c5c1b933cb2747"
+  "sourceVersion": "f81d0df0ff860ae5e896722e2b12bfc09835469a0e8e689f5ebd71dc9e3429e3"
 }

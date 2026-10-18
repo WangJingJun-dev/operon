@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "{{shown}} / {{total}} heute anstehende Aufgaben",
 		"taskFinderRecentModifiedCountOne": "{{count}} in den {{period}} geänderte Aufgabe",
 		"taskFinderRecentModifiedCountMany": "{{count}} in den {{period}} geänderte Aufgaben",
-		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} in den {{period}} geänderte Aufgaben"
+		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} in den {{period}} geänderte Aufgaben",
+		"taskIdRepairTitle": "Inkompatible Task-ID",
+		"taskIdRepairMessage": "Task-IDs müssen genau 7 Kleinbuchstaben oder Ziffern enthalten. Generiere diese ID neu, um Task-Aktionen zu ermöglichen.",
+		"taskIdRepairConfirm": "ID neu generieren"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "Die Steuerungs-API für den Excalidraw-Aufgabenpool ist nicht verfügbar.",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "Die Gruppenänderung konnte nicht angewendet werden. Die Karte wurde an ihre vorherige Position zurückgesetzt.",
 		"canvasGroupOverlap": "Operon-Gruppen mit derselben einwertigen Eigenschaft dürfen sich nicht überschneiden. Die Änderung wurde nicht angewendet.",
 		"canvasGroupDropPartial": "Eine Gruppenänderung konnte nicht sicher abgeschlossen werden. Prüfe die Aufgabe und das Canvas, bevor du fortfährst.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Aufgabe erstellt, aber die Vorlageneinstellungen konnten nicht gespeichert werden."
+		"taskCreatedTemplatePreferencesSaveFailed": "Aufgabe erstellt, aber die Vorlageneinstellungen konnten nicht gespeichert werden.",
+		"taskIdRepairUncertain": "Die vorherige ID-Reparatur konnte nicht verifiziert werden. Prüfe die betroffenen Dateien, bevor du es erneut versuchst.",
+		"inlineTaskParentMissing": "Die ausgewählte übergeordnete Aufgabe fehlt oder ist mehrdeutig. Es wurde keine Aufgabe erstellt.",
+		"inlineTaskParentDrawingRequired": "Öffne die übergeordnete Zeichnung und starte dort den Task-Ersteller, um die zugehörige Inline-Aufgabe sicher zu erstellen."
 	},
 	"duplicateOperonId": {
 		"title": "Operon-ID-Konflikt",

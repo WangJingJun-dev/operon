@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "pt-BR",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Adicionar subtarefa em arquivo",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Buscar todas as tarefas...",
       "taskFinderSearchAria": "Buscar tarefas",
       "taskFinderSearchOpenPlaceholder": "Buscar tarefas abertas...",
-      "taskFinderSearchScopedPlaceholder": "Buscar escopos de tarefa selecionados..."
+      "taskFinderSearchScopedPlaceholder": "Buscar escopos de tarefa selecionados...",
+      "taskIdRepairConfirm": "Regenerar ID",
+      "taskIdRepairMessage": "Os IDs de tarefas devem conter exatamente 7 letras minúsculas ou números. Regenere este ID para habilitar as ações da tarefa.",
+      "taskIdRepairTitle": "ID de tarefa incompatível"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "O arquivo ativo não é uma tarefa em arquivo Operon.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "O cabeçalho da tarefa inline deve começar com 1 a 6 caracteres #, como {{example}}.",
       "inlineTaskMoved": "Tarefa inline movida: {{taskName}}",
       "inlineTaskMovedHere": "Tarefa inline movida aqui",
+      "inlineTaskParentDrawingRequired": "Abra o desenho pai e inicie o criador de tarefas nele para criar com segurança sua tarefa inline.",
+      "inlineTaskParentMissing": "A tarefa pai selecionada está ausente ou é ambígua. Nenhuma tarefa foi criada.",
       "inlineTaskTargetInvalid": "O arquivo de tarefa inline configurado não foi encontrado.",
       "inlineTaskTargetMissing": "Escolha um arquivo de tarefa inline padrão nas configurações ou ative o salvamento diário de notas.",
       "inlineTasksCreatedCount": "{{count}} tarefas inline criadas",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "A tarefa não foi excluída e algumas alterações relacionadas precisam ser revisadas.",
       "taskDescriptionRequired": "A descrição da tarefa é obrigatória.",
       "taskFieldsInvalid": "O Operon não conseguiu salvar esta tarefa. Revise os campos e tente novamente.",
+      "taskIdRepairUncertain": "Não foi possível verificar o reparo anterior do ID. Revise os arquivos afetados antes de tentar novamente.",
       "taskNotInIndex": "Tarefa não encontrada no índice",
       "taskSaveFailed": "Falha ao salvar alterações da tarefa",
       "taskSourceUnavailable": "A origem da tarefa não foi encontrada. O Operon atualizou o índice de tarefas.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Alternar visualização descendente"
     }
   },
-  "sourceVersion": "9762c7adcd8634929cd2c946cb5b529904951d4ba57999b5218068cc6910298f"
+  "sourceVersion": "4cd9eacc65bcf72547e33155a60a2a7c802d3cbecdd844681e80c16c25343019"
 }

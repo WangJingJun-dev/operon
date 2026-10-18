@@ -18156,7 +18156,7 @@ export default class OperonPlugin extends Plugin {
 	private async requestInvalidTaskIdRepair(target: TaskIdRepairTarget): Promise<void> {
 		if (this.taskIdRepairPromptActive || this.taskIdRepairActive) return;
 		if (this.taskIdRepairUncertain) {
-			new Notice('The previous ID repair could not be verified. Review the affected files before retrying.');
+			new Notice(t('notifications', 'taskIdRepairUncertain'));
 			return;
 		}
 		this.taskIdRepairPromptActive = true;
@@ -31637,7 +31637,7 @@ export default class OperonPlugin extends Plugin {
         const parentId = (draft.fieldValues.parentTask ?? '').trim();
         const parent = parentId ? this.indexer.getTask(parentId) : null;
         if (drawing && parentId && (!parent || this.indexer.hasDuplicateOperonIdConflict(parentId))) {
-         new Notice('The selected parent task is missing or ambiguous. No task was created.');
+         new Notice(t('notifications', 'inlineTaskParentMissing'));
          return false;
         }
         if (parent && drawing && parent.primary.filePath === drawing.file.path) {
@@ -31645,7 +31645,7 @@ export default class OperonPlugin extends Plugin {
         }
         const parentFile = parent ? this.app.vault.getAbstractFileByPath(parent.primary.filePath) : null;
         if (parentFile instanceof TFile && this.isExcalidrawTaskSource(parentFile)) {
-         new Notice('Open the parent drawing and start task creator there to safely create its inline task.');
+         new Notice(t('notifications', 'inlineTaskParentDrawingRequired'));
          return false;
         }
 		return await this.createInlineTaskFromCreatorDraftResult(draft) !== null;

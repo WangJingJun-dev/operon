@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "{{shown}} / {{total}} attività in programma oggi",
 		"taskFinderRecentModifiedCountOne": "{{count}} attività modificata {{period}}",
 		"taskFinderRecentModifiedCountMany": "{{count}} attività modificate {{period}}",
-		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} attività modificate {{period}}"
+		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} attività modificate {{period}}",
+		"taskIdRepairTitle": "ID attività incompatibile",
+		"taskIdRepairMessage": "Gli ID delle attività devono contenere esattamente 7 lettere minuscole o numeri. Rigenera questo ID per abilitare le azioni sull’attività.",
+		"taskIdRepairConfirm": "Rigenera ID"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "L’API di controllo del pool attività Excalidraw non è disponibile.",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "Impossibile applicare la modifica del gruppo. La scheda è tornata alla posizione precedente.",
 		"canvasGroupOverlap": "I gruppi Operon con la stessa proprietà a valore singolo non possono sovrapporsi. La modifica non è stata applicata.",
 		"canvasGroupDropPartial": "Impossibile completare in sicurezza una modifica del gruppo. Controlla l’attività e il Canvas prima di continuare.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Attività creata, ma non è stato possibile salvare le preferenze del modello."
+		"taskCreatedTemplatePreferencesSaveFailed": "Attività creata, ma non è stato possibile salvare le preferenze del modello.",
+		"taskIdRepairUncertain": "Non è stato possibile verificare la riparazione precedente dell’ID. Controlla i file interessati prima di riprovare.",
+		"inlineTaskParentMissing": "L’attività padre selezionata manca o è ambigua. Nessuna attività è stata creata.",
+		"inlineTaskParentDrawingRequired": "Apri il disegno padre e avvia da lì il creatore di attività per creare in modo sicuro la sua attività in linea."
 	},
 	"duplicateOperonId": {
 		"title": "Conflitto ID Operon",

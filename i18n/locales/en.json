@@ -144,7 +144,10 @@
 		"taskFinderHappensTodayCountShown": "{{shown}} / {{total}} tasks happening today",
 		"taskFinderRecentModifiedCountOne": "{{count}} task modified in the {{period}}",
 		"taskFinderRecentModifiedCountMany": "{{count}} tasks modified in the {{period}}",
-		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} tasks modified in the {{period}}"
+		"taskFinderRecentModifiedCountShown": "{{shown}} / {{total}} tasks modified in the {{period}}",
+		"taskIdRepairTitle": "Incompatible task ID",
+		"taskIdRepairMessage": "Task IDs must contain exactly 7 lowercase letters or numbers. Regenerate this ID to enable task actions.",
+		"taskIdRepairConfirm": "Regenerate ID"
 	},
 	"notifications": {
 		"excalidrawPoolUnavailable": "Excalidraw’s Task Pool control API is unavailable.",
@@ -393,7 +396,10 @@
 		"canvasGroupDropBlocked": "The group change could not be applied. The card returned to its previous position.",
 		"canvasGroupOverlap": "Operon groups with the same single-value property cannot overlap. The change was not applied.",
 		"canvasGroupDropPartial": "A group change could not finish safely. Check the task and Canvas before continuing.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Task created, but template preferences could not be saved."
+		"taskCreatedTemplatePreferencesSaveFailed": "Task created, but template preferences could not be saved.",
+		"taskIdRepairUncertain": "The previous ID repair could not be verified. Review the affected files before retrying.",
+		"inlineTaskParentMissing": "The selected parent task is missing or ambiguous. No task was created.",
+		"inlineTaskParentDrawingRequired": "Open the parent drawing and start task creator there to safely create its inline task."
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID Conflict",

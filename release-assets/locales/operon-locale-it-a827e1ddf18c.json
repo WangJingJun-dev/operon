@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "it",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3660,
+  "keyFingerprint": "e513a6fbeba635ede329378f83051970c2316759ed2ea7b119a653e0522880c6",
   "translations": {
     "buttons": {
       "addFileSubtask": "Aggiungi sotto-attività-file",
@@ -798,7 +798,10 @@
       "taskFinderSearchAllPlaceholder": "Cerca tutte le attività...",
       "taskFinderSearchAria": "Cerca attività",
       "taskFinderSearchOpenPlaceholder": "Cerca attività aperte...",
-      "taskFinderSearchScopedPlaceholder": "Cerca negli ambiti di attività selezionati..."
+      "taskFinderSearchScopedPlaceholder": "Cerca negli ambiti di attività selezionati...",
+      "taskIdRepairConfirm": "Rigenera ID",
+      "taskIdRepairMessage": "Gli ID delle attività devono contenere esattamente 7 lettere minuscole o numeri. Rigenera questo ID per abilitare le azioni sull’attività.",
+      "taskIdRepairTitle": "ID attività incompatibile"
     },
     "notifications": {
       "activeFileNotOperonFileTask": "Il file attivo non è un'attività-file Operon.",
@@ -916,6 +919,8 @@
       "inlineTaskHeadingInvalid": "L'intestazione dell'attività in linea deve iniziare con 1-6 caratteri #, come {{example}}.",
       "inlineTaskMoved": "Attività in linea spostata: {{taskName}}",
       "inlineTaskMovedHere": "Attività in linea spostata qui",
+      "inlineTaskParentDrawingRequired": "Apri il disegno padre e avvia da lì il creatore di attività per creare in modo sicuro la sua attività in linea.",
+      "inlineTaskParentMissing": "L’attività padre selezionata manca o è ambigua. Nessuna attività è stata creata.",
       "inlineTaskTargetInvalid": "Il file di attività in linea configurato non è stato trovato.",
       "inlineTaskTargetMissing": "Scegli un file di attività in linea predefinito nelle impostazioni oppure attiva il salvataggio nella nota giornaliera.",
       "inlineTasksCreatedCount": "{{count}} attività in linea create",
@@ -1018,6 +1023,7 @@
       "taskDeleteRecoveryRequired": "L'attività non è stata eliminata e alcune modifiche correlate richiedono verifica.",
       "taskDescriptionRequired": "La descrizione dell'attività è obbligatoria.",
       "taskFieldsInvalid": "Operon non ha potuto salvare questa attività. Controlla i campi e riprova.",
+      "taskIdRepairUncertain": "Non è stato possibile verificare la riparazione precedente dell’ID. Controlla i file interessati prima di riprovare.",
       "taskNotInIndex": "Attività non trovata nell'indice",
       "taskSaveFailed": "Salvataggio delle modifiche all'attività non riuscito",
       "taskSourceUnavailable": "La sorgente dell'attività non è stata trovata. Operon ha aggiornato l'indice delle attività.",
@@ -3699,5 +3705,5 @@
       "toggleDescendantPreview": "Alterna anteprima discendenti"
     }
   },
-  "sourceVersion": "58ae9894250f4981f4c0e9577380639c6996009da920abd15f3fc360213f47d7"
+  "sourceVersion": "9080fac5e08b666bafe17baf0c407dcbe63a8abb4ca519fac60728fbb18a8f0c"
 }
