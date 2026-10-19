@@ -130,6 +130,7 @@ import {
 import { KanbanPresetQuickSettingsModal } from './kanban/kanban-preset-quick-settings-modal';
 import { OperonIndexer } from '../indexer/indexer';
 import { ConfirmActionModal } from './confirm-action-modal';
+import { applyFieldKeySync, dryRunFieldKeySync, type FieldKeySyncSummary } from './field-key-sync-runner';
 import { WorkflowPipelineRepairModal } from './workflow-pipeline-repair-modal';
 import { FileTaskMigrationProgressModal } from './file-task-migration-progress-modal';
 import { OperonReleaseNotesModal } from './release-notes-modal';
@@ -964,6 +965,7 @@ export class OperonSettingsTab extends PluginSettingTab {
 	private tablePresetFileIntegration: TablePresetSettingsFileIntegration | null;
 	private localePackManager: LocalePackManager | null;
 	private languageSelectionPending: OperonLanguage | null = null;
+	private fieldKeySyncRunning = false;
 	private languageSelectionError = '';
 	private reminderSoundPreviewController: ReminderSoundPreviewController | null = null;
 	private reminderSoundPreviewOwnerWindow: Window | null = null;
@@ -3111,6 +3113,11 @@ export class OperonSettingsTab extends PluginSettingTab {
 			return;
 		}
 
+		if (entry.key === 'fieldKeySyncEnabled') {
+			this.configureFieldKeySyncSetting(setting);
+			return;
+		}
+
 		if (entry.id === 'settings.demoWorkspace') {
 			setting.addButton(button => {
 				button
@@ -4534,6 +4541,66 @@ export class OperonSettingsTab extends PluginSettingTab {
 			});
 		setting.settingEl.dataset.operonSettingsSearchId = 'settings.operonDocs';
 		return setting;
+	}
+
+	private configureFieldKeySyncSetting(setting: Setting): Setting {
+		setting.setName(t('settings', 'fieldKeySync'));
+		setting.setDesc(t('settings', 'fieldKeySyncDesc'));
+		setting.addToggle(toggle => toggle
+			.setValue(this.settings.fieldKeySyncEnabled)
+			.setDisabled(this.fieldKeySyncRunning)
+			.onChange(settingsAsyncHandler('settings field key sync failed', async value => {
+				const direction = value ? 'to-visible' as const : 'to-canonical' as const;
+				const dryRun = await dryRunFieldKeySync(this.app, this.settings, direction);
+				if (!this.confirmFieldKeySyncRequired(dryRun.summary)) {
+					this.settings.fieldKeySyncEnabled = value;
+					await this.saveSettings();
+					new Notice(t('notifications', 'fieldKeySyncResultNoop'));
+					return;
+				}
+				const confirmed = await new Promise<boolean>(resolve => {
+					new ConfirmActionModal(this.app, {
+						title: t('modals', 'fieldKeySyncConfirmTitle'),
+						message: t('modals', direction === 'to-visible'
+							? 'fieldKeySyncConfirmToVisible'
+							: 'fieldKeySyncConfirmToCanonical', {
+							files: String(dryRun.summary.filesRewritten),
+							moves: String(dryRun.summary.fieldsMoved),
+							conflicts: String(dryRun.summary.conflicts),
+						}),
+						confirmText: t('modals', 'fieldKeySyncConfirmButton'),
+						cancelText: t('buttons', 'cancel'),
+						initialFocus: 'cancel',
+					}, resolve).open();
+				});
+				if (!confirmed) {
+					toggle.setValue(this.settings.fieldKeySyncEnabled);
+					return;
+				}
+				this.fieldKeySyncRunning = true;
+				toggle.setDisabled(true);
+				try {
+					const summary = await applyFieldKeySync(this.app, this.settings, direction);
+					this.settings.fieldKeySyncEnabled = value;
+					await this.saveSettings();
+					const failureSuffix = summary.failures.length > 0
+						? ' ' + t('notifications', 'fieldKeySyncResultFailures', { count: String(summary.failures.length) })
+						: '';
+					new Notice(t('notifications', 'fieldKeySyncResult', {
+						moved: String(summary.fieldsMoved),
+						files: String(summary.filesRewritten),
+						conflicts: String(summary.conflicts),
+					}) + failureSuffix);
+				} finally {
+					this.fieldKeySyncRunning = false;
+					toggle.setDisabled(false);
+				}
+			})));
+		return this.markSettingsSearchTarget(setting, 'fieldKeySyncEnabled');
+	}
+
+	private confirmFieldKeySyncRequired(summary: FieldKeySyncSummary): boolean {
+		return summary.fieldsMoved > 0 || summary.conflicts > 0;
 	}
 
 	private configureLanguageDropdownSetting(setting: Setting): Setting {

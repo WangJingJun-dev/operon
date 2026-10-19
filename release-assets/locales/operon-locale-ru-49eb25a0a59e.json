@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "ru",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Добавить файловую подзадачу",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Создать задачу из события календаря",
       "editRecurringTaskOccurrence": "Редактировать повторение задачи",
       "editTask": "Редактор задач",
+      "fieldKeySyncConfirmButton": "Мигрировать",
+      "fieldKeySyncConfirmTitle": "Синхронизировать ключи свойств?",
+      "fieldKeySyncConfirmToCanonical": "Пробный прогон: будут переписаны файлы задач: {{files}}, {{moves}} ключей возвращено на канонические английские имена, {{conflicts}} конфликтов пропущено. Значения сохраняются без изменений.",
+      "fieldKeySyncConfirmToVisible": "Пробный прогон: будут переписаны файлы задач: {{files}}, {{moves}} ключей перенесено на текущие видимые имена, {{conflicts}} конфликтов пропущено. Значения сохраняются без изменений.",
       "newTask": "Новая задача",
       "plainCheckboxEditorDiscardConfirm": "Отменить изменения",
       "plainCheckboxEditorDiscardMessage": "Несохранённые изменения чекбоксов будут отменены.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "Внешние календари не настроены.",
       "externalCalendarsSyncComplete": "Внешние календари обновлены. Синхронизировано: {{synced}}, ошибок: {{failed}}, пропущено: {{skipped}}.",
       "externalCalendarsSyncStarted": "Обновление внешних календарей...",
+      "fieldKeySyncResult": "Синхронизация завершена: переписано ключей: {{moved}} в файлах: {{files}}; конфликтов пропущено: {{conflicts}}.",
+      "fieldKeySyncResultFailures": "Не удалось обработать файлов: {{count}}.",
+      "fieldKeySyncResultNoop": "Синхронизировать нечего — файлы задач уже используют целевые ключи.",
       "fileSubtaskCreateFailed": "Не удалось создать файловую подзадачу.",
       "fileSubtaskCreated": "Создана новая файловая подзадача.",
       "fileTaskConvertedToInlineTask": "Файловая задача преобразована во встроенную: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Значки приоритета",
       "fallbackTaskIconSourceState": "Значки состояния",
       "fallbackTaskStateIcons": "Источники значков и цветов",
+      "fieldKeySync": "Синхронизировать ключи свойств с текущими именами",
+      "fieldKeySyncDesc": "Переписывает ключи свойств в существующих задачах на видимые имена из Key Mappings (например, китайские имена). При выключении возвращает канонические английские ключи. Значения никогда не меняются; дублирующиеся ключи с разными значениями сообщаются как конфликты и остаются нетронутыми.",
       "fileParentTaskTargetDefault": "Место сохранения по умолчанию",
       "fileParentTaskTargetInsideParentFile": "Внутри родительского файла",
       "fileParentTaskTargetMode": "Размещение встроенной задачи, если родитель — файловая задача",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Переключить предпросмотр потомков"
     }
   },
-  "sourceVersion": "0d1e4cbc09c0938c0a7527cd403ebe412e5496fa8cabd3006a8a96df7e08def3"
+  "sourceVersion": "19751891f2798a5a4abb468905a8ee2b8ae0e401ddc491816e004f301711b864"
 }

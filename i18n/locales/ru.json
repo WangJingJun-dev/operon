@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Отменить изменения чекбоксов?",
 		"plainCheckboxEditorDiscardMessage": "Несохранённые изменения чекбоксов будут отменены.",
 		"plainCheckboxEditorDiscardConfirm": "Отменить изменения",
+		"fieldKeySyncConfirmTitle": "Синхронизировать ключи свойств?",
+		"fieldKeySyncConfirmToVisible": "Пробный прогон: будут переписаны файлы задач: {{files}}, {{moves}} ключей перенесено на текущие видимые имена, {{conflicts}} конфликтов пропущено. Значения сохраняются без изменений.",
+		"fieldKeySyncConfirmToCanonical": "Пробный прогон: будут переписаны файлы задач: {{files}}, {{moves}} ключей возвращено на канонические английские имена, {{conflicts}} конфликтов пропущено. Значения сохраняются без изменений.",
+		"fieldKeySyncConfirmButton": "Мигрировать",
 		"convertCurrentNoteTitle": "Преобразовать текущую заметку",
 		"convertCurrentNoteMessage": "Преобразовать текущую заметку Markdown в файловую задачу Operon?",
 		"convertWithTemplate": "Преобразовать с использованием шаблона",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "Не удалось применить изменение группы. Карточка вернулась на прежнее место.",
 		"canvasGroupOverlap": "Группы Operon с одним и тем же однозначным свойством не могут пересекаться. Изменение не применено.",
 		"canvasGroupDropPartial": "Не удалось безопасно завершить изменение группы. Проверьте задачу и Canvas, прежде чем продолжить.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Задача создана, но настройки шаблона не удалось сохранить."
+		"taskCreatedTemplatePreferencesSaveFailed": "Задача создана, но настройки шаблона не удалось сохранить.",
+		"fieldKeySyncResult": "Синхронизация завершена: переписано ключей: {{moved}} в файлах: {{files}}; конфликтов пропущено: {{conflicts}}.",
+		"fieldKeySyncResultNoop": "Синхронизировать нечего — файлы задач уже используют целевые ключи.",
+		"fieldKeySyncResultFailures": "Не удалось обработать файлов: {{count}}."
 	},
 	"duplicateOperonId": {
 		"title": "Конфликт ID Operon",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Открыть документацию по {{name}}",
 		"language": "Язык",
 		"languageDesc": "Язык интерфейса. Английский включён; другие языки загружаются при выборе.",
+		"fieldKeySync": "Синхронизировать ключи свойств с текущими именами",
+		"fieldKeySyncDesc": "Переписывает ключи свойств в существующих задачах на видимые имена из Key Mappings (например, китайские имена). При выключении возвращает канонические английские ключи. Значения никогда не меняются; дублирующиеся ключи с разными значениями сообщаются как конфликты и остаются нетронутыми.",
 		"languagePackDownload": "Скачать",
 		"languagePackDownloading": "Загрузка…",
 		"languagePackUpdate": "Обновить",

@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "tr",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Dosya Tipi Alt Görev Ekle",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Takvim etkinliğinden görev oluştur",
       "editRecurringTaskOccurrence": "Yinelenen görev gerçekleşmesini düzenle",
       "editTask": "Görev Editörü",
+      "fieldKeySyncConfirmButton": "Geçir",
+      "fieldKeySyncConfirmTitle": "Özellik anahtarları eşitlensin mi?",
+      "fieldKeySyncConfirmToCanonical": "Deneme taraması: {{files}} görev dosyası yeniden yazılacak, {{moves}} özellik anahtarı canonical İngilizce anahtarlara geri alınacak, {{conflicts}} çakışma atlanacak. Değerler olduğu gibi korunur.",
+      "fieldKeySyncConfirmToVisible": "Deneme taraması: {{files}} görev dosyası yeniden yazılacak, {{moves}} özellik anahtarı geçerli görünür adlara taşınacak, {{conflicts}} çakışma atlanacak. Değerler olduğu gibi korunur.",
       "newTask": "Yeni Görev",
       "plainCheckboxEditorDiscardConfirm": "Değişiklikleri at",
       "plainCheckboxEditorDiscardMessage": "Kaydedilmemiş onay kutusu düzenlemelerin atılacak.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "Yapılandırılmış harici takvim yok.",
       "externalCalendarsSyncComplete": "Harici takvimler eşitlendi. Eşitlenen: {{synced}}, başarısız: {{failed}}, atlanan: {{skipped}}.",
       "externalCalendarsSyncStarted": "Harici takvimler eşitleniyor...",
+      "fieldKeySyncResult": "Eşitleme tamamlandı: {{files}} dosyada {{moved}} anahtar yeniden yazıldı; {{conflicts}} çakışma atlandı.",
+      "fieldKeySyncResultFailures": "{{count}} dosya başarısız oldu.",
+      "fieldKeySyncResultNoop": "Eşitlenecek bir şey yok — görev dosyaları zaten hedef anahtarları kullanıyor.",
       "fileSubtaskCreateFailed": "Dosya alt görevi oluşturulamadı.",
       "fileSubtaskCreated": "Yeni dosya alt görevi oluşturuldu.",
       "fileTaskConvertedToInlineTask": "Dosya görevi satır içi göreve dönüştürüldü: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Öncelik simgeleri",
       "fallbackTaskIconSourceState": "Durum simgeleri",
       "fallbackTaskStateIcons": "Simge ve Renk Kaynakları",
+      "fieldKeySync": "Özellik anahtarlarını geçerli adlarla eşitle",
+      "fieldKeySyncDesc": "Mevcut görev dosyalarındaki özellik anahtarlarını Key Mappings'te ayarlanan görünür adlarla (örneğin Çince adlar) yeniden yazar. Kapatınca bunları canonical İngilizce anahtarlara geri yazar. Değerler asla değişmez; farklı değere sahip yinelenen anahtarlar çakışma olarak raporlanır ve olduğu gibi bırakılır.",
       "fileParentTaskTargetDefault": "Varsayılan kayıt yeri",
       "fileParentTaskTargetInsideParentFile": "Üst görev dosyasının içine",
       "fileParentTaskTargetMode": "Üst dosya görevi ise satır içi görev konumu",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Alt görev önizlemesini aç/kapat"
     }
   },
-  "sourceVersion": "013776b2f57131eada193571e1eb7542f6a5ff73be63c4d56360acba9e161e4f"
+  "sourceVersion": "c5d636f405da85afa4f56658fc932ed18ed974f2b692d4f0c885e47fd8caa422"
 }

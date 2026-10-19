@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "pt-BR",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Adicionar subtarefa em arquivo",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Criar tarefa a partir de evento do calendário",
       "editRecurringTaskOccurrence": "Editar ocorrência recorrente da tarefa",
       "editTask": "Editor de Tarefa",
+      "fieldKeySyncConfirmButton": "Migrar",
+      "fieldKeySyncConfirmTitle": "Sincronizar chaves de propriedades?",
+      "fieldKeySyncConfirmToCanonical": "Simulação: {{files}} arquivo(s) de tarefas serão reescritos, {{moves}} chave(s) restaurada(s) para as chaves canônicas em inglês, {{conflicts}} conflito(s) ignorado(s). Os valores são preservados.",
+      "fieldKeySyncConfirmToVisible": "Simulação: {{files}} arquivo(s) de tarefas serão reescritos, {{moves}} chave(s) movida(s) para os nomes visíveis atuais, {{conflicts}} conflito(s) ignorado(s). Os valores são preservados.",
       "newTask": "Nova tarefa",
       "plainCheckboxEditorDiscardConfirm": "Descartar alterações",
       "plainCheckboxEditorDiscardMessage": "Suas alterações não salvas na caixa de seleção serão descartadas.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "Nenhum calendário externo configurado.",
       "externalCalendarsSyncComplete": "Calendários externos atualizados. Sincronizado: {{synced}}, falhou: {{failed}}, ignorado: {{skipped}}.",
       "externalCalendarsSyncStarted": "Atualizando calendários externos...",
+      "fieldKeySyncResult": "Sincronização concluída: {{moved}} chave(s) reescrita(s) em {{files}} arquivo(s); {{conflicts}} conflito(s) ignorados.",
+      "fieldKeySyncResultFailures": "{{count}} arquivo(s) falharam.",
+      "fieldKeySyncResultNoop": "Nada para sincronizar — os arquivos de tarefas já usam as chaves de destino.",
       "fileSubtaskCreateFailed": "Falha ao criar a subtarefa de tarefa em arquivo.",
       "fileSubtaskCreated": "Nova subtarefa em arquivo criada.",
       "fileTaskConvertedToInlineTask": "Tarefa em arquivo convertida para tarefa inline: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Ícones de prioridade",
       "fallbackTaskIconSourceState": "Ícones de estado",
       "fallbackTaskStateIcons": "Fontes de ícones e cores",
+      "fieldKeySync": "Sincronizar chaves de propriedades para os nomes atuais",
+      "fieldKeySyncDesc": "Reescreve as chaves de propriedades nas tarefas existentes para os nomes visíveis definidos em Key Mappings (por exemplo, nomes em chinês). Ao desativar, reescreve de volta para as chaves canônicas em inglês. Os valores nunca mudam; chaves duplicadas com valores diferentes são relatadas como conflitos e deixadas intactas.",
       "fileParentTaskTargetDefault": "Local de salvamento padrão",
       "fileParentTaskTargetInsideParentFile": "Dentro do arquivo pai",
       "fileParentTaskTargetMode": "Posicionamento de tarefa inline quando o pai é uma tarefa em arquivo",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Alternar visualização descendente"
     }
   },
-  "sourceVersion": "9762c7adcd8634929cd2c946cb5b529904951d4ba57999b5218068cc6910298f"
+  "sourceVersion": "2a28865cb88029dfd808c956ca39ab0d459f01493e2a93e654e4920a8ccd8386"
 }

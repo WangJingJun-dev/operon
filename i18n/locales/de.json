@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Änderungen an Kontrollkästchen verwerfen?",
 		"plainCheckboxEditorDiscardMessage": "Deine nicht gespeicherten Kontrollkästchen-Änderungen werden verworfen.",
 		"plainCheckboxEditorDiscardConfirm": "Änderungen verwerfen",
+		"fieldKeySyncConfirmTitle": "Eigenschaftsschlüssel synchronisieren?",
+		"fieldKeySyncConfirmToVisible": "Probelauf: {{files}} Aufgabendatei(en) werden umgeschrieben, {{moves}} Eigenschaftsschlüssel werden auf die aktuellen sichtbaren Namen verschoben, {{conflicts}} Konflikt(e) übersprungen. Werte bleiben unverändert.",
+		"fieldKeySyncConfirmToCanonical": "Probelauf: {{files}} Aufgabendatei(en) werden umgeschrieben, {{moves}} Eigenschaftsschlüssel werden auf die kanonischen englischen Schlüssel zurückgesetzt, {{conflicts}} Konflikt(e) übersprungen. Werte bleiben unverändert.",
+		"fieldKeySyncConfirmButton": "Migrieren",
 		"convertCurrentNoteTitle": "Aktuelle Notiz umwandeln",
 		"convertCurrentNoteMessage": "Die aktuelle Markdown-Notiz in eine Operon-Datei-Aufgabe umwandeln?",
 		"convertWithTemplate": "Mit einer Vorlage umwandeln",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "Die Gruppenänderung konnte nicht angewendet werden. Die Karte wurde an ihre vorherige Position zurückgesetzt.",
 		"canvasGroupOverlap": "Operon-Gruppen mit derselben einwertigen Eigenschaft dürfen sich nicht überschneiden. Die Änderung wurde nicht angewendet.",
 		"canvasGroupDropPartial": "Eine Gruppenänderung konnte nicht sicher abgeschlossen werden. Prüfe die Aufgabe und das Canvas, bevor du fortfährst.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Aufgabe erstellt, aber die Vorlageneinstellungen konnten nicht gespeichert werden."
+		"taskCreatedTemplatePreferencesSaveFailed": "Aufgabe erstellt, aber die Vorlageneinstellungen konnten nicht gespeichert werden.",
+		"fieldKeySyncResult": "Synchronisierung abgeschlossen: {{moved}} Schlüssel in {{files}} Datei(en) umgeschrieben; {{conflicts}} Konflikt(e) übersprungen.",
+		"fieldKeySyncResultNoop": "Nichts zu synchronisieren — die Aufgabendateien verwenden bereits die Zielschlüssel.",
+		"fieldKeySyncResultFailures": "{{count}} Datei(en) fehlgeschlagen."
 	},
 	"duplicateOperonId": {
 		"title": "Operon-ID-Konflikt",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Dokumentation für {{name}} öffnen",
 		"language": "Sprache",
 		"languageDesc": "Sprache der Oberfläche. Englisch ist enthalten; andere Sprachen werden bei Auswahl heruntergeladen.",
+		"fieldKeySync": "Eigenschaftsschlüssel auf aktuelle Namen synchronisieren",
+		"fieldKeySyncDesc": "Schreibt Eigenschaftsschlüssel in bestehenden Aufgabendateien auf die in Key Mappings gesetzten sichtbaren Namen um (z. B. chinesische Namen). Das Ausschalten stellt die kanonischen englischen Schlüssel wieder her. Werte bleiben unverändert; abweichende doppelte Schlüssel werden als Konflikte gemeldet und unberührt gelassen.",
 		"languagePackDownload": "Herunterladen",
 		"languagePackDownloading": "Wird heruntergeladen…",
 		"languagePackUpdate": "Aktualisieren",

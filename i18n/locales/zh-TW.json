@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "放棄核取方塊更改？",
 		"plainCheckboxEditorDiscardMessage": "你未儲存的核取方塊編輯將被放棄。",
 		"plainCheckboxEditorDiscardConfirm": "放棄更改",
+		"fieldKeySyncConfirmTitle": "同步屬性鍵？",
+		"fieldKeySyncConfirmToVisible": "預掃描：將重寫 {{files}} 個任務檔案，{{moves}} 個屬性鍵遷移到目前可見名，{{conflicts}} 個衝突跳過。值原樣保留。",
+		"fieldKeySyncConfirmToCanonical": "預掃描：將重寫 {{files}} 個任務檔案，{{moves}} 個屬性鍵恢復為 canonical 英文鍵，{{conflicts}} 個衝突跳過。值原樣保留。",
+		"fieldKeySyncConfirmButton": "遷移",
 		"convertCurrentNoteTitle": "轉換當前筆記",
 		"convertCurrentNoteMessage": "將當前 Markdown 筆記轉換為 Operon 檔案任務？",
 		"convertWithTemplate": "使用模板轉換",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "無法套用群組變更。卡片已返回原來的位置。",
 		"canvasGroupOverlap": "具有相同單值屬性的 Operon 群組不能重疊。變更未套用。",
 		"canvasGroupDropPartial": "無法安全完成群組變更。繼續之前，請檢查任務和 Canvas。",
-		"taskCreatedTemplatePreferencesSaveFailed": "任務已建立，但無法儲存範本偏好設定。"
+		"taskCreatedTemplatePreferencesSaveFailed": "任務已建立，但無法儲存範本偏好設定。",
+		"fieldKeySyncResult": "屬性鍵同步完成：{{files}} 個檔案重寫 {{moved}} 個鍵；{{conflicts}} 個衝突跳過。",
+		"fieldKeySyncResultNoop": "無需同步——任務檔案已使用目標鍵。",
+		"fieldKeySyncResultFailures": "{{count}} 個檔案失敗。"
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID 衝突",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "開啟 {{name}} 的文件",
 		"language": "語言",
 		"languageDesc": "介面語言。英語已內建；選擇其他語言時會下載相應語言套件。",
+		"fieldKeySync": "同步屬性鍵到目前名稱",
+		"fieldKeySyncDesc": "把既有任務檔案中的屬性鍵重寫為 Key Mappings 中設定的可見名（如中文名）。關閉後會重寫回 canonical 英文鍵。值一律不變；值不同的重複鍵記為衝突並原樣保留。",
 		"languagePackDownload": "下載",
 		"languagePackDownloading": "正在下載…",
 		"languagePackUpdate": "更新",

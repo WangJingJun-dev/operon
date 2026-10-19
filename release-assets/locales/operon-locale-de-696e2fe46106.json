@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "de",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Datei-Unteraufgabe hinzufügen",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Aufgabe aus Kalenderereignis erstellen",
       "editRecurringTaskOccurrence": "Wiederkehrende Aufgaben-Instanz bearbeiten",
       "editTask": "Aufgaben-Editor",
+      "fieldKeySyncConfirmButton": "Migrieren",
+      "fieldKeySyncConfirmTitle": "Eigenschaftsschlüssel synchronisieren?",
+      "fieldKeySyncConfirmToCanonical": "Probelauf: {{files}} Aufgabendatei(en) werden umgeschrieben, {{moves}} Eigenschaftsschlüssel werden auf die kanonischen englischen Schlüssel zurückgesetzt, {{conflicts}} Konflikt(e) übersprungen. Werte bleiben unverändert.",
+      "fieldKeySyncConfirmToVisible": "Probelauf: {{files}} Aufgabendatei(en) werden umgeschrieben, {{moves}} Eigenschaftsschlüssel werden auf die aktuellen sichtbaren Namen verschoben, {{conflicts}} Konflikt(e) übersprungen. Werte bleiben unverändert.",
       "newTask": "Neue Aufgabe",
       "plainCheckboxEditorDiscardConfirm": "Änderungen verwerfen",
       "plainCheckboxEditorDiscardMessage": "Deine nicht gespeicherten Kontrollkästchen-Änderungen werden verworfen.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "Keine externen Kalender konfiguriert.",
       "externalCalendarsSyncComplete": "Externe Kalender aktualisiert. Synchronisiert: {{synced}}, fehlgeschlagen: {{failed}}, übersprungen: {{skipped}}.",
       "externalCalendarsSyncStarted": "Externe Kalender werden aktualisiert…",
+      "fieldKeySyncResult": "Synchronisierung abgeschlossen: {{moved}} Schlüssel in {{files}} Datei(en) umgeschrieben; {{conflicts}} Konflikt(e) übersprungen.",
+      "fieldKeySyncResultFailures": "{{count}} Datei(en) fehlgeschlagen.",
+      "fieldKeySyncResultNoop": "Nichts zu synchronisieren — die Aufgabendateien verwenden bereits die Zielschlüssel.",
       "fileSubtaskCreateFailed": "Die Datei-Unteraufgabe konnte nicht erstellt werden.",
       "fileSubtaskCreated": "Neue Datei-Unteraufgabe erstellt.",
       "fileTaskConvertedToInlineTask": "Datei-Aufgabe in Inline-Aufgabe umgewandelt: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Prioritäts-Symbole",
       "fallbackTaskIconSourceState": "Status-Symbole",
       "fallbackTaskStateIcons": "Symbol- und Farbquellen",
+      "fieldKeySync": "Eigenschaftsschlüssel auf aktuelle Namen synchronisieren",
+      "fieldKeySyncDesc": "Schreibt Eigenschaftsschlüssel in bestehenden Aufgabendateien auf die in Key Mappings gesetzten sichtbaren Namen um (z. B. chinesische Namen). Das Ausschalten stellt die kanonischen englischen Schlüssel wieder her. Werte bleiben unverändert; abweichende doppelte Schlüssel werden als Konflikte gemeldet und unberührt gelassen.",
       "fileParentTaskTargetDefault": "Standard-Speicherort",
       "fileParentTaskTargetInsideParentFile": "In der übergeordneten Datei",
       "fileParentTaskTargetMode": "Inline-Aufgaben-Platzierung, wenn die übergeordnete Aufgabe eine Datei-Aufgabe ist",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Vorschau untergeordneter Aufgaben umschalten"
     }
   },
-  "sourceVersion": "d3c9d9f2660aaced2cd6c66f2c2aef905fa78d56a666bb53700a5b7b60d0b20b"
+  "sourceVersion": "876f10269620d3a82e22fc8cc3b0495c30389f348ead72c07ded7d8801fd8e3a"
 }

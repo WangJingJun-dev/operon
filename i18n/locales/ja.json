@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "チェックボックスの変更を破棄しますか？",
 		"plainCheckboxEditorDiscardMessage": "未保存のチェックボックスの編集は破棄されます。",
 		"plainCheckboxEditorDiscardConfirm": "変更を破棄",
+		"fieldKeySyncConfirmTitle": "プロパティキーを同期しますか？",
+		"fieldKeySyncConfirmToVisible": "事前スキャン: {{files}} 個のタスクファイルを書き換え、{{moves}} 個のプロパティキーを現在の表示名に移動し、{{conflicts}} 件の競合をスキップします。値はそのまま保持されます。",
+		"fieldKeySyncConfirmToCanonical": "事前スキャン: {{files}} 個のタスクファイルを書き換え、{{moves}} 個のプロパティキーを canonical の英語キーに戻し、{{conflicts}} 件の競合をスキップします。値はそのまま保持されます。",
+		"fieldKeySyncConfirmButton": "移行",
 		"convertCurrentNoteTitle": "現在のノートを変換",
 		"convertCurrentNoteMessage": "現在の Markdown ノートを Operon ファイルタスクに変換しますか？",
 		"convertWithTemplate": "テンプレートを使って変換",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "グループの変更を適用できませんでした。カードは元の位置に戻りました。",
 		"canvasGroupOverlap": "同じ単一値プロパティを持つ Operon グループは重ねられません。変更は適用されませんでした。",
 		"canvasGroupDropPartial": "グループの変更を安全に完了できませんでした。続行する前にタスクとCanvasを確認してください。",
-		"taskCreatedTemplatePreferencesSaveFailed": "タスクは作成されましたが、テンプレート設定を保存できませんでした。"
+		"taskCreatedTemplatePreferencesSaveFailed": "タスクは作成されましたが、テンプレート設定を保存できませんでした。",
+		"fieldKeySyncResult": "プロパティキーの同期が完了しました: {{files}} 個のファイルで {{moved}} 個のキーを書き換え、{{conflicts}} 件の競合をスキップしました。",
+		"fieldKeySyncResultNoop": "同期するものはありません — タスクファイルはすでに対象のキーを使用しています。",
+		"fieldKeySyncResultFailures": "{{count}} 個のファイルが失敗しました。"
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID の競合",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "{{name}} のドキュメントを開く",
 		"language": "言語",
 		"languageDesc": "UI の言語。英語は同梱され、その他の言語は選択時にダウンロードされます。",
+		"fieldKeySync": "プロパティキーを現在の名前に同期",
+		"fieldKeySyncDesc": "既存のタスクファイルのプロパティキーを、Key Mappings で設定した表示名（例: 中国語名）に書き換えます。オフにすると、canonical の英語キーに戻ります。値は変更されません。値が異なる重複キーは競合として報告され、そのまま残ります。",
 		"languagePackDownload": "ダウンロード",
 		"languagePackDownloading": "ダウンロード中…",
 		"languagePackUpdate": "更新",

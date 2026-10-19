@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "ja",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "ファイルサブタスクを追加",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "カレンダーイベントからタスクを作成",
       "editRecurringTaskOccurrence": "繰り返しタスクの回を編集",
       "editTask": "タスクエディター",
+      "fieldKeySyncConfirmButton": "移行",
+      "fieldKeySyncConfirmTitle": "プロパティキーを同期しますか？",
+      "fieldKeySyncConfirmToCanonical": "事前スキャン: {{files}} 個のタスクファイルを書き換え、{{moves}} 個のプロパティキーを canonical の英語キーに戻し、{{conflicts}} 件の競合をスキップします。値はそのまま保持されます。",
+      "fieldKeySyncConfirmToVisible": "事前スキャン: {{files}} 個のタスクファイルを書き換え、{{moves}} 個のプロパティキーを現在の表示名に移動し、{{conflicts}} 件の競合をスキップします。値はそのまま保持されます。",
       "newTask": "新しいタスク",
       "plainCheckboxEditorDiscardConfirm": "変更を破棄",
       "plainCheckboxEditorDiscardMessage": "未保存のチェックボックスの編集は破棄されます。",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "外部カレンダーが設定されていません。",
       "externalCalendarsSyncComplete": "外部カレンダーを更新しました。同期: {{synced}}、失敗: {{failed}}、スキップ: {{skipped}}。",
       "externalCalendarsSyncStarted": "外部カレンダーを更新中...",
+      "fieldKeySyncResult": "プロパティキーの同期が完了しました: {{files}} 個のファイルで {{moved}} 個のキーを書き換え、{{conflicts}} 件の競合をスキップしました。",
+      "fieldKeySyncResultFailures": "{{count}} 個のファイルが失敗しました。",
+      "fieldKeySyncResultNoop": "同期するものはありません — タスクファイルはすでに対象のキーを使用しています。",
       "fileSubtaskCreateFailed": "ファイルサブタスクの作成に失敗しました。",
       "fileSubtaskCreated": "新しいファイルサブタスクを作成しました。",
       "fileTaskConvertedToInlineTask": "ファイルタスクをインラインタスクに変換しました: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "優先度アイコン",
       "fallbackTaskIconSourceState": "状態アイコン",
       "fallbackTaskStateIcons": "アイコンと色のソース",
+      "fieldKeySync": "プロパティキーを現在の名前に同期",
+      "fieldKeySyncDesc": "既存のタスクファイルのプロパティキーを、Key Mappings で設定した表示名（例: 中国語名）に書き換えます。オフにすると、canonical の英語キーに戻ります。値は変更されません。値が異なる重複キーは競合として報告され、そのまま残ります。",
       "fileParentTaskTargetDefault": "デフォルトの保存先",
       "fileParentTaskTargetInsideParentFile": "親ファイルの中",
       "fileParentTaskTargetMode": "親がファイルタスクの場合のインラインタスクの配置",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "子孫プレビューを切り替え"
     }
   },
-  "sourceVersion": "a89efaed84802dde71c14664855450892c19e284e388cd1272c5c1b933cb2747"
+  "sourceVersion": "0d4b85420697ce9d07717c4718849bc2d57b164e2208d1267bedca5b27d77397"
 }

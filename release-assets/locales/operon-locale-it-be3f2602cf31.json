@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "it",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Aggiungi sotto-attività-file",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Crea attività da evento del calendario",
       "editRecurringTaskOccurrence": "Modifica occorrenza di attività ricorrente",
       "editTask": "Editor attività",
+      "fieldKeySyncConfirmButton": "Migra",
+      "fieldKeySyncConfirmTitle": "Sincronizzare le chiavi delle proprietà?",
+      "fieldKeySyncConfirmToCanonical": "Prova a vuoto: {{files}} file di attività verranno riscritti, {{moves}} chiavi ripristinate alle chiavi canoniche inglesi, {{conflicts}} conflitti saltati. I valori restano invariati.",
+      "fieldKeySyncConfirmToVisible": "Prova a vuoto: {{files}} file di attività verranno riscritti, {{moves}} chiavi spostate sui nomi visibili attuali, {{conflicts}} conflitti saltati. I valori restano invariati.",
       "newTask": "Nuova attività",
       "plainCheckboxEditorDiscardConfirm": "Ignora modifiche",
       "plainCheckboxEditorDiscardMessage": "Le modifiche non salvate alle caselle di controllo verranno ignorate.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "Nessun calendario esterno configurato.",
       "externalCalendarsSyncComplete": "Calendari esterni aggiornati. Sincronizzati: {{synced}}, non riusciti: {{failed}}, ignorati: {{skipped}}.",
       "externalCalendarsSyncStarted": "Aggiornamento dei calendari esterni in corso...",
+      "fieldKeySyncResult": "Sincronizzazione completata: {{moved}} chiavi riscritte in {{files}} file; {{conflicts}} conflitti saltati.",
+      "fieldKeySyncResultFailures": "{{count}} file non riusciti.",
+      "fieldKeySyncResultNoop": "Nulla da sincronizzare: i file di attività usano già le chiavi di destinazione.",
       "fileSubtaskCreateFailed": "Creazione della sotto-attività-file non riuscita.",
       "fileSubtaskCreated": "Nuova sotto-attività-file creata.",
       "fileTaskConvertedToInlineTask": "Attività-file convertita in attività in linea: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Icone di priorità",
       "fallbackTaskIconSourceState": "Icone di stato",
       "fallbackTaskStateIcons": "Fonti di icone e colori",
+      "fieldKeySync": "Sincronizza le chiavi delle proprietà ai nomi attuali",
+      "fieldKeySyncDesc": "Riscrive le chiavi delle proprietà nelle attività esistenti con i nomi visibili impostati in Key Mappings (ad esempio nomi cinesi). Disattivando l'opzione, le riscrive con le chiavi canoniche inglesi. I valori non cambiano mai; le chiavi duplicate con valori diversi vengono segnalate come conflitti e lasciate intatte.",
       "fileParentTaskTargetDefault": "Posizione di salvataggio predefinita",
       "fileParentTaskTargetInsideParentFile": "All'interno del file principale",
       "fileParentTaskTargetMode": "Posizionamento attività in linea quando il genitore è un'attività-file",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Alterna anteprima discendenti"
     }
   },
-  "sourceVersion": "58ae9894250f4981f4c0e9577380639c6996009da920abd15f3fc360213f47d7"
+  "sourceVersion": "534facb07f93ed7008a909758bd0a4b6e6a066b968fdd03d4ea36a580013df3d"
 }

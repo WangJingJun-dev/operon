@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "zh-TW",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "新增檔案子任務",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "從日曆事件建立任務",
       "editRecurringTaskOccurrence": "編輯重複任務的此次發生",
       "editTask": "任務編輯器",
+      "fieldKeySyncConfirmButton": "遷移",
+      "fieldKeySyncConfirmTitle": "同步屬性鍵？",
+      "fieldKeySyncConfirmToCanonical": "預掃描：將重寫 {{files}} 個任務檔案，{{moves}} 個屬性鍵恢復為 canonical 英文鍵，{{conflicts}} 個衝突跳過。值原樣保留。",
+      "fieldKeySyncConfirmToVisible": "預掃描：將重寫 {{files}} 個任務檔案，{{moves}} 個屬性鍵遷移到目前可見名，{{conflicts}} 個衝突跳過。值原樣保留。",
       "newTask": "新任務",
       "plainCheckboxEditorDiscardConfirm": "放棄更改",
       "plainCheckboxEditorDiscardMessage": "你未儲存的核取方塊編輯將被放棄。",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "未配置外部日曆。",
       "externalCalendarsSyncComplete": "外部日曆已更新。已同步：{{synced}}，失敗：{{failed}}，已跳過：{{skipped}}。",
       "externalCalendarsSyncStarted": "正在更新外部日曆……",
+      "fieldKeySyncResult": "屬性鍵同步完成：{{files}} 個檔案重寫 {{moved}} 個鍵；{{conflicts}} 個衝突跳過。",
+      "fieldKeySyncResultFailures": "{{count}} 個檔案失敗。",
+      "fieldKeySyncResultNoop": "無需同步——任務檔案已使用目標鍵。",
       "fileSubtaskCreateFailed": "建立檔案子任務失敗。",
       "fileSubtaskCreated": "已建立新的檔案子任務。",
       "fileTaskConvertedToInlineTask": "檔案任務已轉換為行內任務：{{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "優先順序圖示",
       "fallbackTaskIconSourceState": "狀態圖示",
       "fallbackTaskStateIcons": "圖示與顏色來源",
+      "fieldKeySync": "同步屬性鍵到目前名稱",
+      "fieldKeySyncDesc": "把既有任務檔案中的屬性鍵重寫為 Key Mappings 中設定的可見名（如中文名）。關閉後會重寫回 canonical 英文鍵。值一律不變；值不同的重複鍵記為衝突並原樣保留。",
       "fileParentTaskTargetDefault": "預設儲存位置",
       "fileParentTaskTargetInsideParentFile": "父檔案內部",
       "fileParentTaskTargetMode": "父任務為檔案任務時的行內任務放置",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "切換子任務預覽"
     }
   },
-  "sourceVersion": "01bae8c561667a8cad93214db2f2964b9a8ae917f7c82291b9349ce5260f8f7b"
+  "sourceVersion": "b937db506fca074b5605330ed8a50949ceea78b2fcd06b6c48697f6d3dd83517"
 }

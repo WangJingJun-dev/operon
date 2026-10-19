@@ -1632,6 +1632,8 @@ export interface OperonSettings extends TaskCardSettings {
 	releaseNotesShowOnUpdate: boolean;
 	releaseNotesLastShownVersion: string;
 	checkForUpdatesOnStartup: boolean;
+	/** When enabled, task-file property keys are synced to the current visible names; turning it off syncs them back to canonical keys. */
+	fieldKeySyncEnabled: boolean;
 	lastNotifiedReleaseVersion: string;
 	operonDocsFolder: string;
 	operonDocsAutoUpdateEnabled: boolean;
@@ -2245,6 +2247,7 @@ export const DEFAULT_SETTINGS: OperonSettings = {
 	releaseNotesShowOnUpdate: true,
 	releaseNotesLastShownVersion: '',
 	checkForUpdatesOnStartup: true,
+	fieldKeySyncEnabled: false,
 	lastNotifiedReleaseVersion: '',
 	operonDocsFolder: 'Operon/Docs',
 	operonDocsAutoUpdateEnabled: false,
@@ -5062,6 +5065,7 @@ export function migrateSettings(raw: unknown): OperonSettings {
 		DEFAULT_SETTINGS.reminderNoticeDurationSeconds,
 	) as ReminderNoticeDurationSeconds;
 	out.reminderAutoPinDueTasks = src.reminderAutoPinDueTasks === true;
+	out.fieldKeySyncEnabled = src.fieldKeySyncEnabled === true;
 	out.reminderSystemNotificationsEnabled = src.reminderSystemNotificationsEnabled === true;
 	out.reminderSoundFilePath = typeof src.reminderSoundFilePath === 'string'
 		? src.reminderSoundFilePath.trim()

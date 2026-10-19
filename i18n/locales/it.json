@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Ignorare le modifiche alle caselle di controllo?",
 		"plainCheckboxEditorDiscardMessage": "Le modifiche non salvate alle caselle di controllo verranno ignorate.",
 		"plainCheckboxEditorDiscardConfirm": "Ignora modifiche",
+		"fieldKeySyncConfirmTitle": "Sincronizzare le chiavi delle proprietà?",
+		"fieldKeySyncConfirmToVisible": "Prova a vuoto: {{files}} file di attività verranno riscritti, {{moves}} chiavi spostate sui nomi visibili attuali, {{conflicts}} conflitti saltati. I valori restano invariati.",
+		"fieldKeySyncConfirmToCanonical": "Prova a vuoto: {{files}} file di attività verranno riscritti, {{moves}} chiavi ripristinate alle chiavi canoniche inglesi, {{conflicts}} conflitti saltati. I valori restano invariati.",
+		"fieldKeySyncConfirmButton": "Migra",
 		"convertCurrentNoteTitle": "Converti nota corrente",
 		"convertCurrentNoteMessage": "Convertire la nota markdown corrente in un'attività-file Operon?",
 		"convertWithTemplate": "Converti con un modello",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "Impossibile applicare la modifica del gruppo. La scheda è tornata alla posizione precedente.",
 		"canvasGroupOverlap": "I gruppi Operon con la stessa proprietà a valore singolo non possono sovrapporsi. La modifica non è stata applicata.",
 		"canvasGroupDropPartial": "Impossibile completare in sicurezza una modifica del gruppo. Controlla l’attività e il Canvas prima di continuare.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Attività creata, ma non è stato possibile salvare le preferenze del modello."
+		"taskCreatedTemplatePreferencesSaveFailed": "Attività creata, ma non è stato possibile salvare le preferenze del modello.",
+		"fieldKeySyncResult": "Sincronizzazione completata: {{moved}} chiavi riscritte in {{files}} file; {{conflicts}} conflitti saltati.",
+		"fieldKeySyncResultNoop": "Nulla da sincronizzare: i file di attività usano già le chiavi di destinazione.",
+		"fieldKeySyncResultFailures": "{{count}} file non riusciti."
 	},
 	"duplicateOperonId": {
 		"title": "Conflitto ID Operon",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Apri la documentazione di {{name}}",
 		"language": "Lingua",
 		"languageDesc": "Lingua dell'interfaccia. L'inglese è incluso; le altre lingue vengono scaricate quando selezionate.",
+		"fieldKeySync": "Sincronizza le chiavi delle proprietà ai nomi attuali",
+		"fieldKeySyncDesc": "Riscrive le chiavi delle proprietà nelle attività esistenti con i nomi visibili impostati in Key Mappings (ad esempio nomi cinesi). Disattivando l'opzione, le riscrive con le chiavi canoniche inglesi. I valori non cambiano mai; le chiavi duplicate con valori diversi vengono segnalate come conflitti e lasciate intatte.",
 		"languagePackDownload": "Scarica",
 		"languagePackDownloading": "Download in corso…",
 		"languagePackUpdate": "Aggiorna",

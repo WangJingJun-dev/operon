@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "¿Descartar cambios en las casillas?",
 		"plainCheckboxEditorDiscardMessage": "Se descartarán las ediciones de casillas sin guardar.",
 		"plainCheckboxEditorDiscardConfirm": "Descartar cambios",
+		"fieldKeySyncConfirmTitle": "¿Sincronizar claves de propiedades?",
+		"fieldKeySyncConfirmToVisible": "Simulación: se reescribirán {{files}} archivo(s) de tareas, {{moves}} clave(s) se moverán a los nombres visibles actuales, {{conflicts}} conflicto(s) omitidos. Los valores se conservan sin cambios.",
+		"fieldKeySyncConfirmToCanonical": "Simulación: se reescribirán {{files}} archivo(s) de tareas, {{moves}} clave(s) volverán a las claves canónicas en inglés, {{conflicts}} conflicto(s) omitidos. Los valores se conservan sin cambios.",
+		"fieldKeySyncConfirmButton": "Migrar",
 		"convertCurrentNoteTitle": "Convertir nota actual",
 		"convertCurrentNoteMessage": "¿Convertir la nota markdown actual en una tarea de archivo de Operon?",
 		"convertWithTemplate": "Convertir con una plantilla",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "No se pudo aplicar el cambio del grupo. La tarjeta volvió a su posición anterior.",
 		"canvasGroupOverlap": "Los grupos Operon con la misma propiedad de valor único no pueden superponerse. No se aplicó el cambio.",
 		"canvasGroupDropPartial": "No se pudo completar un cambio del grupo de forma segura. Revisa la tarea y el Canvas antes de continuar.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Tarea creada, pero no se pudieron guardar las preferencias de plantilla."
+		"taskCreatedTemplatePreferencesSaveFailed": "Tarea creada, pero no se pudieron guardar las preferencias de plantilla.",
+		"fieldKeySyncResult": "Sincronización completada: {{moved}} clave(s) reescrita(s) en {{files}} archivo(s); {{conflicts}} conflicto(s) omitidos.",
+		"fieldKeySyncResultNoop": "Nada que sincronizar: los archivos de tareas ya usan las claves de destino.",
+		"fieldKeySyncResultFailures": "{{count}} archivo(s) fallaron."
 	},
 	"duplicateOperonId": {
 		"title": "Conflicto de Operon ID",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Abrir la documentación de {{name}}",
 		"language": "Idioma",
 		"languageDesc": "Idioma de la interfaz. El inglés está incluido; los demás idiomas se descargan al seleccionarlos.",
+		"fieldKeySync": "Sincronizar claves de propiedades a los nombres actuales",
+		"fieldKeySyncDesc": "Reescribe las claves de propiedades en las tareas existentes a los nombres visibles configurados en Key Mappings (por ejemplo, nombres en chino). Al desactivarlo, las reescribe de vuelta a las claves canónicas en inglés. Los valores nunca cambian; las claves duplicadas con valores diferentes se reportan como conflictos y se dejan intactas.",
 		"languagePackDownload": "Descargar",
 		"languagePackDownloading": "Descargando…",
 		"languagePackUpdate": "Actualizar",

@@ -93,6 +93,15 @@ The safe path is to set your names **early**, before you create many tasks, whic
 
 **Tip: let Obsidian rename the property for file tasks.** Obsidian can rename a frontmatter property across your whole vault. In the Properties view, right-click the old property name and choose **Rename property**, then enter the new name. Every file task's frontmatter updates to the new name in one step, lining them up with the new mapping. This is exactly what a key-mapping rename affects, so it brings your file tasks back in line. Inline tasks need nothing, since they already store the canonical key.
 
+## Syncing existing files to the current names
+
+Setting visible names is forward-looking: files already written keep their old property names until something rewrites them. The **Sync property keys to current names** switch (Settings → Operon → General, next to the language setting) performs that rewrite for you.
+
+- **Turning it on** migrates property keys in existing task files — file-task frontmatter and inline `{{key:: value}}` tokens — to the current visible names, so `operonId:` becomes `任务标识:` and `{{operonId:: …}}` becomes `{{任务标识:: …}}` when that is the configured name.
+- **Turning it off** migrates them back to the canonical English keys. Flipping the switch back and forth is the rollback path; values are never modified either way.
+- A dry run runs first and reports how many files would be rewritten, how many keys would move, and how many conflicts would be skipped; nothing changes until you confirm. Conflicts — the old and new key present in one file with different values — are left untouched and counted in the report.
+- Only Operon-managed task files are touched. Any other file in the vault, and any property Operon does not manage, is left alone. Values are carried over byte-for-byte, and running the sync twice in a row changes nothing the second time.
+
 ## Why this matters
 
 If you already have a property naming style in your vault, key mappings let Operon adopt it instead of forcing its own. Set them early, ideally before you create many file tasks, so every file task is written with the names you want from the start. They are part of the [[DOCS-008 Essential settings to configure first|essential settings]] for this reason.

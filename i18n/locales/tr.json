@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Onay kutusu değişiklikleri atılsın mı?",
 		"plainCheckboxEditorDiscardMessage": "Kaydedilmemiş onay kutusu düzenlemelerin atılacak.",
 		"plainCheckboxEditorDiscardConfirm": "Değişiklikleri at",
+		"fieldKeySyncConfirmTitle": "Özellik anahtarları eşitlensin mi?",
+		"fieldKeySyncConfirmToVisible": "Deneme taraması: {{files}} görev dosyası yeniden yazılacak, {{moves}} özellik anahtarı geçerli görünür adlara taşınacak, {{conflicts}} çakışma atlanacak. Değerler olduğu gibi korunur.",
+		"fieldKeySyncConfirmToCanonical": "Deneme taraması: {{files}} görev dosyası yeniden yazılacak, {{moves}} özellik anahtarı canonical İngilizce anahtarlara geri alınacak, {{conflicts}} çakışma atlanacak. Değerler olduğu gibi korunur.",
+		"fieldKeySyncConfirmButton": "Geçir",
 		"convertCurrentNoteTitle": "Mevcut Notu Dönüştür",
 		"convertCurrentNoteMessage": "Mevcut markdown notu Operon dosya görevine dönüştürülsün mü?",
 		"convertWithTemplate": "Şablon ile Dönüştür",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "Grup değişikliği uygulanamadı. Kart önceki konumuna döndü.",
 		"canvasGroupOverlap": "Aynı tek değerli property’ye ait Operon grupları kesişemez. Değişiklik uygulanmadı.",
 		"canvasGroupDropPartial": "Grup değişikliği güvenle tamamlanamadı. Devam etmeden task ve Canvas’ı kontrol edin.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Görev oluşturuldu, ancak şablon tercihleri kaydedilemedi."
+		"taskCreatedTemplatePreferencesSaveFailed": "Görev oluşturuldu, ancak şablon tercihleri kaydedilemedi.",
+		"fieldKeySyncResult": "Eşitleme tamamlandı: {{files}} dosyada {{moved}} anahtar yeniden yazıldı; {{conflicts}} çakışma atlandı.",
+		"fieldKeySyncResultNoop": "Eşitlenecek bir şey yok — görev dosyaları zaten hedef anahtarları kullanıyor.",
+		"fieldKeySyncResultFailures": "{{count}} dosya başarısız oldu."
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID Çakışması",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "{{name}} belgelerini aç",
 		"language": "Dil",
 		"languageDesc": "Arayüz dili. İngilizce dahildir; diğer diller seçildiğinde indirilir.",
+		"fieldKeySync": "Özellik anahtarlarını geçerli adlarla eşitle",
+		"fieldKeySyncDesc": "Mevcut görev dosyalarındaki özellik anahtarlarını Key Mappings'te ayarlanan görünür adlarla (örneğin Çince adlar) yeniden yazar. Kapatınca bunları canonical İngilizce anahtarlara geri yazar. Değerler asla değişmez; farklı değere sahip yinelenen anahtarlar çakışma olarak raporlanır ve olduğu gibi bırakılır.",
 		"languagePackDownload": "İndir",
 		"languagePackDownloading": "İndiriliyor…",
 		"languagePackUpdate": "Güncelle",

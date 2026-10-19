@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "zh-CN",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "添加文件子任务",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "从日历事件创建任务",
       "editRecurringTaskOccurrence": "编辑重复任务的此次发生",
       "editTask": "任务编辑器",
+      "fieldKeySyncConfirmButton": "迁移",
+      "fieldKeySyncConfirmTitle": "同步属性键？",
+      "fieldKeySyncConfirmToCanonical": "预扫描：将重写 {{files}} 个任务文件，{{moves}} 个属性键恢复为 canonical 英文键，{{conflicts}} 个冲突跳过。值原样保留。",
+      "fieldKeySyncConfirmToVisible": "预扫描：将重写 {{files}} 个任务文件，{{moves}} 个属性键迁移到当前可见名，{{conflicts}} 个冲突跳过。值原样保留。",
       "newTask": "新任务",
       "plainCheckboxEditorDiscardConfirm": "放弃更改",
       "plainCheckboxEditorDiscardMessage": "你未保存的复选框编辑将被放弃。",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "未配置外部日历。",
       "externalCalendarsSyncComplete": "外部日历已更新。已同步：{{synced}}，失败：{{failed}}，已跳过：{{skipped}}。",
       "externalCalendarsSyncStarted": "正在更新外部日历……",
+      "fieldKeySyncResult": "属性键同步完成：{{files}} 个文件重写 {{moved}} 个键；{{conflicts}} 个冲突跳过。",
+      "fieldKeySyncResultFailures": "{{count}} 个文件失败。",
+      "fieldKeySyncResultNoop": "无需同步——任务文件已使用目标键。",
       "fileSubtaskCreateFailed": "创建文件子任务失败。",
       "fileSubtaskCreated": "已创建新的文件子任务。",
       "fileTaskConvertedToInlineTask": "文件任务已转换为行内任务：{{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "优先级图标",
       "fallbackTaskIconSourceState": "状态图标",
       "fallbackTaskStateIcons": "图标和颜色来源",
+      "fieldKeySync": "同步属性键到当前名称",
+      "fieldKeySyncDesc": "把既有任务文件中的属性键重写为 Key Mappings 中设置的可见名（如中文名）。关闭后会重写回 canonical 英文键。值一律不变；值不同的重复键记为冲突并原样保留。",
       "fileParentTaskTargetDefault": "默认保存位置",
       "fileParentTaskTargetInsideParentFile": "父文件内部",
       "fileParentTaskTargetMode": "父任务为文件任务时的行内任务放置",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "切换子任务预览"
     }
   },
-  "sourceVersion": "faf2241794cc5bcf134c93de74c68e0e907040b2dc27863ba13215e7c6267439"
+  "sourceVersion": "ed737a3e8f0ba47ae3e2ad7ec5dcaa62615ed807a09b90baac54f48541c981c6"
 }

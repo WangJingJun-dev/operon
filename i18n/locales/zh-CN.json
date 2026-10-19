@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "放弃复选框更改？",
 		"plainCheckboxEditorDiscardMessage": "你未保存的复选框编辑将被放弃。",
 		"plainCheckboxEditorDiscardConfirm": "放弃更改",
+		"fieldKeySyncConfirmTitle": "同步属性键？",
+		"fieldKeySyncConfirmToVisible": "预扫描：将重写 {{files}} 个任务文件，{{moves}} 个属性键迁移到当前可见名，{{conflicts}} 个冲突跳过。值原样保留。",
+		"fieldKeySyncConfirmToCanonical": "预扫描：将重写 {{files}} 个任务文件，{{moves}} 个属性键恢复为 canonical 英文键，{{conflicts}} 个冲突跳过。值原样保留。",
+		"fieldKeySyncConfirmButton": "迁移",
 		"convertCurrentNoteTitle": "转换当前笔记",
 		"convertCurrentNoteMessage": "将当前 Markdown 笔记转换为 Operon 文件任务？",
 		"convertWithTemplate": "使用模板转换",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "无法应用分组更改。卡片已返回原来的位置。",
 		"canvasGroupOverlap": "具有相同单值属性的 Operon 分组不能重叠。更改未应用。",
 		"canvasGroupDropPartial": "无法安全完成分组更改。继续之前，请检查任务和 Canvas。",
-		"taskCreatedTemplatePreferencesSaveFailed": "任务已创建，但无法保存模板偏好设置。"
+		"taskCreatedTemplatePreferencesSaveFailed": "任务已创建，但无法保存模板偏好设置。",
+		"fieldKeySyncResult": "属性键同步完成：{{files}} 个文件重写 {{moved}} 个键；{{conflicts}} 个冲突跳过。",
+		"fieldKeySyncResultNoop": "无需同步——任务文件已使用目标键。",
+		"fieldKeySyncResultFailures": "{{count}} 个文件失败。"
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID 冲突",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "打开 {{name}} 的文档",
 		"language": "语言",
 		"languageDesc": "界面语言。英语已内置；选择其他语言时会下载相应语言包。",
+		"fieldKeySync": "同步属性键到当前名称",
+		"fieldKeySyncDesc": "把既有任务文件中的属性键重写为 Key Mappings 中设置的可见名（如中文名）。关闭后会重写回 canonical 英文键。值一律不变；值不同的重复键记为冲突并原样保留。",
 		"languagePackDownload": "下载",
 		"languagePackDownloading": "正在下载…",
 		"languagePackUpdate": "更新",

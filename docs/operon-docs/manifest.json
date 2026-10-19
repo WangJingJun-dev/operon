@@ -199,8 +199,8 @@
     },
     {
       "path": "DOCS-039 Key mappings.md",
-      "sha256": "1529aa263e8c8588f4dba9cf385296118754d04865f41883035452f1d28f3254",
-      "bytes": 10990
+      "sha256": "23dff71b8b60c4df5d8f6ead55bd8e0d6d51684feffba28a3e3a2cc8f2587f90",
+      "bytes": 12307
     },
     {
       "path": "DOCS-040 Custom keys.md",
@@ -758,5 +758,5 @@
       "bytes": 9990
     }
   ],
-  "generatedAt": "2026-10-19T05:29:01.989Z"
+  "generatedAt": "2026-10-19T06:01:13.849Z"
 }

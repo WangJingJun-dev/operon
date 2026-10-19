@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "locale": "es",
-  "keyCount": 3654,
-  "keyFingerprint": "ffbb44f4c0d6e099d341aa45a2c4c775e34909f6b5d1fb4ea74710a448e37b1c",
+  "keyCount": 3663,
+  "keyFingerprint": "8498e1528c0f4915ce110b21744de8b48b49ebe3627c22489d72cb2b5c8cf118",
   "translations": {
     "buttons": {
       "addFileSubtask": "Añadir subtarea de archivo",
@@ -741,6 +741,10 @@
       "createTaskFromCalendarEvent": "Crear tarea desde evento del calendario",
       "editRecurringTaskOccurrence": "Editar ocurrencia de tarea recurrente",
       "editTask": "Editor de tareas",
+      "fieldKeySyncConfirmButton": "Migrar",
+      "fieldKeySyncConfirmTitle": "¿Sincronizar claves de propiedades?",
+      "fieldKeySyncConfirmToCanonical": "Simulación: se reescribirán {{files}} archivo(s) de tareas, {{moves}} clave(s) volverán a las claves canónicas en inglés, {{conflicts}} conflicto(s) omitidos. Los valores se conservan sin cambios.",
+      "fieldKeySyncConfirmToVisible": "Simulación: se reescribirán {{files}} archivo(s) de tareas, {{moves}} clave(s) se moverán a los nombres visibles actuales, {{conflicts}} conflicto(s) omitidos. Los valores se conservan sin cambios.",
       "newTask": "Nueva tarea",
       "plainCheckboxEditorDiscardConfirm": "Descartar cambios",
       "plainCheckboxEditorDiscardMessage": "Se descartarán las ediciones de casillas sin guardar.",
@@ -885,6 +889,9 @@
       "externalCalendarsNoneConfigured": "No hay calendarios externos configurados.",
       "externalCalendarsSyncComplete": "Calendarios externos actualizados. Sincronizados: {{synced}}, fallidos: {{failed}}, omitidos: {{skipped}}.",
       "externalCalendarsSyncStarted": "Actualizando calendarios externos...",
+      "fieldKeySyncResult": "Sincronización completada: {{moved}} clave(s) reescrita(s) en {{files}} archivo(s); {{conflicts}} conflicto(s) omitidos.",
+      "fieldKeySyncResultFailures": "{{count}} archivo(s) fallaron.",
+      "fieldKeySyncResultNoop": "Nada que sincronizar: los archivos de tareas ya usan las claves de destino.",
       "fileSubtaskCreateFailed": "No se pudo crear la subtarea de archivo.",
       "fileSubtaskCreated": "Nueva subtarea de archivo creada.",
       "fileTaskConvertedToInlineTask": "Tarea de archivo convertida a tarea en línea: {{taskName}}",
@@ -1515,6 +1522,8 @@
       "fallbackTaskIconSourcePriority": "Iconos de prioridad",
       "fallbackTaskIconSourceState": "Iconos de estado",
       "fallbackTaskStateIcons": "Fuentes de iconos y colores",
+      "fieldKeySync": "Sincronizar claves de propiedades a los nombres actuales",
+      "fieldKeySyncDesc": "Reescribe las claves de propiedades en las tareas existentes a los nombres visibles configurados en Key Mappings (por ejemplo, nombres en chino). Al desactivarlo, las reescribe de vuelta a las claves canónicas en inglés. Los valores nunca cambian; las claves duplicadas con valores diferentes se reportan como conflictos y se dejan intactas.",
       "fileParentTaskTargetDefault": "Ubicación de guardado predeterminada",
       "fileParentTaskTargetInsideParentFile": "Dentro del archivo principal",
       "fileParentTaskTargetMode": "Ubicación de tarea en línea cuando la principal es tarea de archivo",
@@ -3699,5 +3708,5 @@
       "toggleDescendantPreview": "Alternar vista previa de descendientes"
     }
   },
-  "sourceVersion": "58d9dda46ec7cdfe78bfc99281bf87dcb6a3d6b82ed0509e80888bbf2ef31109"
+  "sourceVersion": "f6c99d2979273f7876b3e8c65e32193308f293d3a4cd515d4d9561fc751fda44"
 }

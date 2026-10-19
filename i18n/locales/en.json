@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Discard checkbox changes?",
 		"plainCheckboxEditorDiscardMessage": "Your unsaved checkbox edits will be discarded.",
 		"plainCheckboxEditorDiscardConfirm": "Discard changes",
+		"fieldKeySyncConfirmTitle": "Sync property keys?",
+		"fieldKeySyncConfirmToVisible": "Dry run: {{files}} task file(s) will be rewritten, {{moves}} property key(s) moved to the current visible names, {{conflicts}} conflict(s) skipped. Values are carried over unchanged.",
+		"fieldKeySyncConfirmToCanonical": "Dry run: {{files}} task file(s) will be rewritten, {{moves}} property key(s) restored to the canonical English keys, {{conflicts}} conflict(s) skipped. Values are carried over unchanged.",
+		"fieldKeySyncConfirmButton": "Migrate",
 		"convertCurrentNoteTitle": "Convert Current Note",
 		"convertCurrentNoteMessage": "Convert the current markdown note into an Operon file task?",
 		"convertWithTemplate": "Convert with a Template",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "The group change could not be applied. The card returned to its previous position.",
 		"canvasGroupOverlap": "Operon groups with the same single-value property cannot overlap. The change was not applied.",
 		"canvasGroupDropPartial": "A group change could not finish safely. Check the task and Canvas before continuing.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Task created, but template preferences could not be saved."
+		"taskCreatedTemplatePreferencesSaveFailed": "Task created, but template preferences could not be saved.",
+		"fieldKeySyncResult": "Property key sync complete: {{moved}} key(s) rewritten across {{files}} file(s); {{conflicts}} conflict(s) skipped.",
+		"fieldKeySyncResultNoop": "Nothing to sync — task files already use the target keys.",
+		"fieldKeySyncResultFailures": "{{count}} file(s) failed."
 	},
 	"duplicateOperonId": {
 		"title": "Operon ID Conflict",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Open documentation for {{name}}",
 		"language": "Language",
 		"languageDesc": "UI language. English is included; other languages are downloaded when selected.",
+		"fieldKeySync": "Sync property keys to current names",
+		"fieldKeySyncDesc": "Rewrite property keys in existing task files to the visible names set in Key Mappings (for example Chinese names). Turning this off rewrites them back to the canonical English keys. Values are never changed; differing duplicate keys are reported as conflicts and left untouched.",
 		"languagePackDownload": "Download",
 		"languagePackDownloading": "Downloading…",
 		"languagePackUpdate": "Update",

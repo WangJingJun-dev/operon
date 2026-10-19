@@ -94,6 +94,10 @@
 		"plainCheckboxEditorDiscardTitle": "Abandonner les modifications de cases à cocher ?",
 		"plainCheckboxEditorDiscardMessage": "Vos modifications de cases à cocher non enregistrées seront abandonnées.",
 		"plainCheckboxEditorDiscardConfirm": "Abandonner les modifications",
+		"fieldKeySyncConfirmTitle": "Synchroniser les clés de propriétés ?",
+		"fieldKeySyncConfirmToVisible": "Essai à blanc : {{files}} fichier(s) de tâches seront réécrits, {{moves}} clé(s) déplacée(s) vers les noms visibles actuels, {{conflicts}} conflit(s) ignoré(s). Les valeurs sont conservées telles quelles.",
+		"fieldKeySyncConfirmToCanonical": "Essai à blanc : {{files}} fichier(s) de tâches seront réécrits, {{moves}} clé(s) restaurée(s) vers les clés canoniques anglaises, {{conflicts}} conflit(s) ignoré(s). Les valeurs sont conservées telles quelles.",
+		"fieldKeySyncConfirmButton": "Migrer",
 		"convertCurrentNoteTitle": "Convertir la note actuelle",
 		"convertCurrentNoteMessage": "Convertir la note Markdown actuelle en tâche-fichier Operon ?",
 		"convertWithTemplate": "Convertir avec un modèle",
@@ -393,7 +397,10 @@
 		"canvasGroupDropBlocked": "La modification du groupe n’a pas pu être appliquée. La carte est revenue à sa position précédente.",
 		"canvasGroupOverlap": "Les groupes Operon ayant la même propriété à valeur unique ne peuvent pas se chevaucher. La modification n’a pas été appliquée.",
 		"canvasGroupDropPartial": "Une modification du groupe n’a pas pu être terminée en toute sécurité. Vérifiez la tâche et le Canvas avant de continuer.",
-		"taskCreatedTemplatePreferencesSaveFailed": "Tâche créée, mais les préférences de modèle n’ont pas pu être enregistrées."
+		"taskCreatedTemplatePreferencesSaveFailed": "Tâche créée, mais les préférences de modèle n’ont pas pu être enregistrées.",
+		"fieldKeySyncResult": "Synchronisation terminée : {{moved}} clé(s) réécrite(s) dans {{files}} fichier(s) ; {{conflicts}} conflit(s) ignoré(s).",
+		"fieldKeySyncResultNoop": "Rien à synchroniser — les fichiers de tâches utilisent déjà les clés cibles.",
+		"fieldKeySyncResultFailures": "{{count}} fichier(s) en échec."
 	},
 	"duplicateOperonId": {
 		"title": "Conflit d'ID Operon",
@@ -545,6 +552,8 @@
 		"openDocumentationFor": "Ouvrir la documentation de {{name}}",
 		"language": "Langue",
 		"languageDesc": "Langue de l'interface. L'anglais est inclus ; les autres langues sont téléchargées lorsqu'elles sont sélectionnées.",
+		"fieldKeySync": "Synchroniser les clés de propriétés vers les noms actuels",
+		"fieldKeySyncDesc": "Réécrit les clés de propriétés des tâches existantes vers les noms visibles configurés dans Key Mappings (par exemple des noms chinois). La désactivation les réécrit vers les clés canoniques anglaises. Les valeurs ne changent jamais ; les clés en double avec des valeurs différentes sont signalées comme conflits et laissées intactes.",
 		"languagePackDownload": "Télécharger",
 		"languagePackDownloading": "Téléchargement…",
 		"languagePackUpdate": "Mettre à jour",
