@@ -85,5 +85,17 @@ try {
   assert.equal(parsed.fields.find(f=>f.key==='taskIcon')?.value,'🚀');
  });
 
+ await test('operonId can be renamed and still resolves from either name',()=>{
+  const renamed=rename(defaultMappings,'operonId','任务标识');
+  const reverse=buildReverseMapping(renamed);
+  assert.equal(reverse.get('任务标识'),'operonId');
+  assert.equal(reverse.get('operonId'),'operonId');
+  assert.deepEqual(getManagedYamlAliases('operonId',renamed),['任务标识','operonId']);
+  const parsed=parseTaskLine('- [ ] 写报告 {{任务标识:: abc1234}}',0,'Note.md',renamed);
+  assert.equal(parsed.operonId,'abc1234');
+  const fallback=parseTaskLine('- [ ] 写报告 {{operonId:: abc1234}}',0,'Note.md',renamed);
+  assert.equal(fallback.operonId,'abc1234');
+ });
+
  console.log(`${count}/${count} field mapping semantics tests passed`);
 } finally {fs.rmSync(dir,{recursive:true,force:true});}

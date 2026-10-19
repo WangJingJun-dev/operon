@@ -2,7 +2,7 @@
 Notes: Rename property names without changing what a field means
 Icon: key-round
 Color: "#ca8a04"
-Updated: 2026-10-13T17:06:30+02:00
+Updated: 2026-10-19T00:00:00+02:00
 ---
 
 # Key mappings
@@ -58,7 +58,9 @@ For each field, the mapping records:
 - An optional **icon** for the field.
 - A **Hide** toggle that hides the property from the rendered file-task metadata view. The value remains saved in YAML; this is not an inline-field visibility setting.
 
-Operon has a built-in set of canonical fields covering the whole task model. You can edit their visible names and icons, but you do not change their types, create them, or delete them here. The `operonId` property name is protected and cannot be renamed. To add a field of your own, see [[DOCS-040 Custom keys|Custom keys]].
+Operon has a built-in set of canonical fields covering the whole task model. You can edit their visible names and icons, but you do not change their types, create them, or delete them here. Every built-in field follows that rule, including `operonId`: its visible name can be renamed like any other field, while the canonical key keeps the task identity stable. To add a field of your own, see [[DOCS-040 Custom keys|Custom keys]].
+
+Visible names are not limited to ASCII. A vault that works in Chinese can map `taskIcon` to `图标`, `taskColor` to `颜色`, `datetimeModified` to `修改时间`, or `dateDue` to `预计结束`; file tasks then carry those names in frontmatter while every view, filter, and automation keeps tracking the unchanged canonical keys.
 
 ## The reminder fields and name collisions
 
@@ -102,6 +104,8 @@ If you already have a property naming style in your vault, key mappings let Oper
 **Does the visible name affect inline tasks?** No. Operon writes inline fields with the canonical key, so a visible-name change affects file-task frontmatter and UI labels, not the `{{key:: value}}` tokens in your notes.
 
 **Can two fields share a visible name?** No. Each visible property name must be unique, so a value never points at two fields.
+
+**Can I rename `operonId`?** Yes. Renaming its visible name moves file-task frontmatter writes to the new name, the same as any other field. Two things keep working unchanged: the canonical key `operonId` never stops resolving, so existing `operonId:` properties remain readable, and inline tasks are untouched because they store the canonical key in `{{operonId:: value}}`. To move existing file tasks to the new name, use Obsidian's **Rename property** as described above.
 
 **Why is a property called `OperonReminderDatetimes`?** The plain name was already taken by another field, so the reminder field took a prefixed one. Rename it if you prefer something else. See "The reminder fields and name collisions" above.
 

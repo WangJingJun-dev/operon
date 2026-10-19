@@ -12044,11 +12044,6 @@ export class OperonSettingsTab extends PluginSettingTab {
 			},
 		});
 
-		if (canonicalKey === 'operonId') {
-			propertyInput.disabled = true;
-			propertyInput.classList.add('is-disabled');
-		}
-
 		if (mapping.isSystem === false) {
 			const actionsWrap = row1.createDiv('operon-key-mapping-actions');
 			const canMoveUp = typeof options.customIndex === 'number' && options.customIndex > 0;
